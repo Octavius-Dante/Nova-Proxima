@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZISOCD_UNIT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ISOCD_UNIT</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>03</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>ISO Code for Unit of Measurement</DDTEXT>
+    <REPTEXT>ISO</REPTEXT>
+    <SCRTEXT_S>ISO Code</SCRTEXT_S>
+    <SCRTEXT_M>ISO Code</SCRTEXT_M>
+    <SCRTEXT_L>ISO Code</SCRTEXT_L>
+    <APPLCLASS>FB</APPLCLASS>
+    <DTELMASTER>E</DTELMASTER>
+    <DEFFDNAME>ISOCODE_UNIT</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>2</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>4</LANGU>
+    <LANGU>5</LANGU>
+    <LANGU>6</LANGU>
+    <LANGU>7</LANGU>
+    <LANGU>8</LANGU>
+    <LANGU>A</LANGU>
+    <LANGU>B</LANGU>
+    <LANGU>C</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>G</LANGU>
+    <LANGU>H</LANGU>
+    <LANGU>I</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>L</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>O</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>Q</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+    <LANGU>T</LANGU>
+    <LANGU>U</LANGU>
+    <LANGU>V</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>d</LANGU>
+    <LANGU>뱋</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>计量单位的 ISO 代码</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO 代码</SCRTEXT_S>
+     <SCRTEXT_M>ISO 代码</SCRTEXT_M>
+     <SCRTEXT_L>ISO 代码</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>2</DDLANGUAGE>
+     <DDTEXT>รหัส ISO สำหรับหน่วยนับ</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>รหัส ISO</SCRTEXT_S>
+     <SCRTEXT_M>รหัส ISO</SCRTEXT_M>
+     <SCRTEXT_L>รหัส ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>단위에 대한 ISO 코드</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO 코드</SCRTEXT_S>
+     <SCRTEXT_M>ISO 코드</SCRTEXT_M>
+     <SCRTEXT_L>ISO 코드</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>4</DDLANGUAGE>
+     <DDTEXT>Cod ISO pt. unitate de măsură</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Cod ISO</SCRTEXT_S>
+     <SCRTEXT_M>Cod ISO</SCRTEXT_M>
+     <SCRTEXT_L>Cod ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>5</DDLANGUAGE>
+     <DDTEXT>ISO koda za mersko enoto</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO koda</SCRTEXT_S>
+     <SCRTEXT_M>ISO koda</SCRTEXT_M>
+     <SCRTEXT_L>ISO koda</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>6</DDLANGUAGE>
+     <DDTEXT>Šifra ISO za jedinicu mjere</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO šifra</SCRTEXT_S>
+     <SCRTEXT_M>ISO šifra</SCRTEXT_M>
+     <SCRTEXT_L>ISO šifra</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>7</DDLANGUAGE>
+     <DDTEXT>Kod ISO untuk Unit Ukuran</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Kod ISO</SCRTEXT_S>
+     <SCRTEXT_M>Kod ISO</SCRTEXT_M>
+     <SCRTEXT_L>Kod ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>8</DDLANGUAGE>
+     <DDTEXT>Код ISO для одиниці вимірювання</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Код ISO</SCRTEXT_S>
+     <SCRTEXT_M>Код ISO</SCRTEXT_M>
+     <SCRTEXT_L>Код ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>A</DDLANGUAGE>
+     <DDTEXT>رمز أيزو لوحدة القياس</DDTEXT>
+     <REPTEXT>أ.</REPTEXT>
+     <SCRTEXT_S>رمز أيزو</SCRTEXT_S>
+     <SCRTEXT_M>رمز أيزو</SCRTEXT_M>
+     <SCRTEXT_L>رمز أيزو</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>B</DDLANGUAGE>
+     <DDTEXT>קוד ISO עבור יחידת מדידה</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>קוד ISO</SCRTEXT_S>
+     <SCRTEXT_M>קוד ISO</SCRTEXT_M>
+     <SCRTEXT_L>קוד ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>C</DDLANGUAGE>
+     <DDTEXT>Kód ISO - měrná jednotka</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Kód ISO</SCRTEXT_S>
+     <SCRTEXT_M>Kód ISO</SCRTEXT_M>
+     <SCRTEXT_L>Kód ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>ISO-Code Maßeinheit</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-Code</SCRTEXT_S>
+     <SCRTEXT_M>ISO-Code</SCRTEXT_M>
+     <SCRTEXT_L>ISO-Code</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Code ISO unité de mesure</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Code ISO</SCRTEXT_S>
+     <SCRTEXT_M>Code ISO</SCRTEXT_M>
+     <SCRTEXT_L>Code ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>G</DDLANGUAGE>
+     <DDTEXT>Κωδικός ISO για Μονάδα Μέτρησης</DDTEXT>
+     <REPTEXT>ISΟ</REPTEXT>
+     <SCRTEXT_S>Κωδ.ISO</SCRTEXT_S>
+     <SCRTEXT_M>Κωδικός ISO</SCRTEXT_M>
+     <SCRTEXT_L>Κωδικός ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>H</DDLANGUAGE>
+     <DDTEXT>ISO-kód: mértékegység</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-kód</SCRTEXT_S>
+     <SCRTEXT_M>ISO-kód</SCRTEXT_M>
+     <SCRTEXT_L>ISO-kód</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>I</DDLANGUAGE>
+     <DDTEXT>Codice ISO unità di misura</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Cd. ISO</SCRTEXT_S>
+     <SCRTEXT_M>Cd. ISO</SCRTEXT_M>
+     <SCRTEXT_L>Cd. ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>数量単位の ISO コード</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO コード</SCRTEXT_S>
+     <SCRTEXT_M>ISO コード</SCRTEXT_M>
+     <SCRTEXT_L>ISO コード</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>ISO-kode måleenhed</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-kode</SCRTEXT_S>
+     <SCRTEXT_M>ISO-kode</SCRTEXT_M>
+     <SCRTEXT_L>ISO-kode</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>L</DDLANGUAGE>
+     <DDTEXT>Kod ISO dla jednostki miary</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Kod ISO</SCRTEXT_S>
+     <SCRTEXT_M>Kod ISO</SCRTEXT_M>
+     <SCRTEXT_L>Kod ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>計量單位的 ISO 代碼</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO 代碼</SCRTEXT_S>
+     <SCRTEXT_M>ISO 代碼</SCRTEXT_M>
+     <SCRTEXT_L>ISO 代碼</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>ISO-code maateenheid</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-code</SCRTEXT_S>
+     <SCRTEXT_M>ISO-code</SCRTEXT_M>
+     <SCRTEXT_L>ISO-code</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>O</DDLANGUAGE>
+     <DDTEXT>ISO-kode for måleenhet</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-kode</SCRTEXT_S>
+     <SCRTEXT_M>ISO-kode</SCRTEXT_M>
+     <SCRTEXT_L>ISO-kode</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Cód.ISO unid.medida</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Código ISO</SCRTEXT_S>
+     <SCRTEXT_M>Código ISO</SCRTEXT_M>
+     <SCRTEXT_L>Código ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Q</DDLANGUAGE>
+     <DDTEXT>Merná jednotka kódu ISO</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Kód ISO</SCRTEXT_S>
+     <SCRTEXT_M>Kód ISO</SCRTEXT_M>
+     <SCRTEXT_L>Kód ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Код ISO для единицы измерения</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Код ISO</SCRTEXT_S>
+     <SCRTEXT_M>Код ISO</SCRTEXT_M>
+     <SCRTEXT_L>Код ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Código ISO p.unidad de medida</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Código ISO</SCRTEXT_S>
+     <SCRTEXT_M>Código ISO</SCRTEXT_M>
+     <SCRTEXT_L>Código ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DDTEXT>Ölçü birimi için ISO kodu</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO kodu</SCRTEXT_S>
+     <SCRTEXT_M>ISO kodu</SCRTEXT_M>
+     <SCRTEXT_L>ISO kodu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>U</DDLANGUAGE>
+     <DDTEXT>Mittayksikön ISO-koodi</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-koodi</SCRTEXT_S>
+     <SCRTEXT_M>ISO-koodi</SCRTEXT_M>
+     <SCRTEXT_L>ISO-koodi</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>V</DDLANGUAGE>
+     <DDTEXT>ISO-kod för måttenhet</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO-kod</SCRTEXT_S>
+     <SCRTEXT_M>ISO-kod</SCRTEXT_M>
+     <SCRTEXT_L>ISO-kod</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>W</DDLANGUAGE>
+     <DDTEXT>Код ISO за мерна единица</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>Код по ISO</SCRTEXT_S>
+     <SCRTEXT_M>Код по ISO</SCRTEXT_M>
+     <SCRTEXT_L>Код по ISO</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>d</DDLANGUAGE>
+     <DDTEXT>ISO kod za jedinicu mere</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO kod</SCRTEXT_S>
+     <SCRTEXT_M>ISO kod</SCRTEXT_M>
+     <SCRTEXT_L>ISO kod</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>뱋</DDLANGUAGE>
+     <DDTEXT>Өлшем бірлігінің ISO коды</DDTEXT>
+     <REPTEXT>ISO</REPTEXT>
+     <SCRTEXT_S>ISO коды</SCRTEXT_S>
+     <SCRTEXT_M>ISO коды</SCRTEXT_M>
+     <SCRTEXT_L>ISO коды</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
