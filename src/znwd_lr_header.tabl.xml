@@ -131,6 +131,12 @@
      <FIELDNAME>EMPLOYEE_ID</FIELDNAME>
     </DD17V>
    </DD17V>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZNWD_LR_HEADER</TABNAME>
+     <CCLASS>CUS_DEV_SUP_DA</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
   </asx:values>
  </asx:abap>
 </abapGit>
