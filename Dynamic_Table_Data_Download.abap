@@ -79,8 +79,6 @@ START-OF-SELECTION.
       <lfs_dd03l>-position = sy-tabix.
     ENDLOOP.
 
-    BREAK-POINT.
-
   ENDIF.
 
   DESCRIBE TABLE lt_dd03l LINES DATA(lv_lines).
@@ -125,9 +123,6 @@ START-OF-SELECTION.
 
     CLEAR : ls_text, lv_variable_2.
   ENDLOOP.
-
-  BREAK-POINT.
-
 
 * FINAL FILE PREPARATION TEXT FORMAT FOR DOWNLOAD
   DATA : lv_filename  TYPE string,
