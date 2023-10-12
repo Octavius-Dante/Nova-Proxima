@@ -21,6 +21,8 @@ CLASS zcl_znwd_text_key_fill IMPLEMENTATION.
 *   fill internal table (itab)
     it_ZNWD_TEXT_KEY = VALUE #(
 
+ ( CLIENT = '001' NODE_KEY = '713AF6CA091F1EEE9A8AF6019917DAB4' ORIGINAL_LANGU = 'E' _DATAAGING = '' )
+
     ).
 
 *   Delete the possible entries in the database table - in case it was already filled
