@@ -16,6 +16,8 @@ REPORT ztest_data.
 * Table field list is retrieved using table name
 * Respective field data is formatted and pushed to file
 
+* With Multiple insert block for records - limitation in "value #" work area record definition range 1100 ~ 1250 
+
 TYPES : BEGIN OF gty_det,
           tabname   TYPE tabname,
           fieldname TYPE fieldname,
