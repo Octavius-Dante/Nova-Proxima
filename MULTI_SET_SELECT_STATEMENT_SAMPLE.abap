@@ -3,16 +3,18 @@
                               endda ,
                               tabnr FROM hrp1018
                               WHERE objid IN @s_objid ),
-         +hrt1018_001 AS ( SELECT tabnr,
-                 CASE tabseqnr WHEN @lc_001 THEN kokrs END AS kokrs_001,
-                 CASE tabseqnr WHEN @lc_001 THEN kostl END AS kostl_001,
-                 CASE tabseqnr WHEN @lc_001 THEN prozt END AS prozt_001,
-                 CASE tabseqnr WHEN @lc_001 THEN aufnr END AS aufnr_001,
-             CASE tabseqnr WHEN @lc_001 THEN fincode END AS fincode_001,
-         CASE tabseqnr WHEN @lc_001 THEN budget_pd END AS budget_pd_001,
-         CASE tabseqnr WHEN @lc_001 THEN fkber END AS fkber_001
-     FROM hrt1018 WHERE tabnr IN ( SELECT DISTINCT tabnr FROM +hrp1018 )
+
++hrt1018_001 AS ( SELECT tabnr,
+    CASE tabseqnr WHEN @lc_001 THEN kokrs END AS kokrs_001,
+    CASE tabseqnr WHEN @lc_001 THEN kostl END AS kostl_001,
+    CASE tabseqnr WHEN @lc_001 THEN prozt END AS prozt_001,
+    CASE tabseqnr WHEN @lc_001 THEN aufnr END AS aufnr_001,
+    CASE tabseqnr WHEN @lc_001 THEN fincode END AS fincode_001,
+    CASE tabseqnr WHEN @lc_001 THEN budget_pd END AS budget_pd_001,
+    CASE tabseqnr WHEN @lc_001 THEN fkber END AS fkber_001
+FROM hrt1018 WHERE tabnr IN ( SELECT DISTINCT tabnr FROM +hrp1018 )
                   AND   tabseqnr EQ @lc_001 ),
+
 +hrt1018_002 AS ( SELECT tabnr,
      CASE tabseqnr WHEN @lc_002 THEN kokrs END AS kokrs_002,
      CASE tabseqnr WHEN @lc_002 THEN kostl END AS kostl_002,
