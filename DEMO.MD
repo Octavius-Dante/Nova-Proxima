@@ -6,4 +6,5 @@
 | Data          |  ``` abap             |  ``` abap             |
 ||DATA text TYPE string.|DATA(text) = 'ABC'.|
 ||text = 'ABC'.||
+||```|```|
 | ------------- | ------------- | ------------- |
