@@ -246,26 +246,26 @@ METHOD if_oo_adt_classrun~main.
 
 * END OF DATA FILL FOR ZNWD_EMPLOYEES ************************
 ************************************************************************
-* DATA FILL FOR ZNWD_EPM_INDX  ****************************
-
-    DATA : it_ZNWD_EPM_INDX TYPE TABLE OF ZNWD_EPM_INDX.
-
-*   fill internal table (itab)
-    it_ZNWD_EPM_INDX = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_EPM_INDX.
-*   insert the new table entries
-    INSERT ZNWD_EPM_INDX FROM TABLE @IT_ZNWD_EPM_INDX.
-
-*   check the result
-    SELECT * FROM ZNWD_EPM_INDX INTO TABLE @it_ZNWD_EPM_INDX.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_EPM_INDX table !' ).
-
-* END OF DATA FILL FOR ZNWD_EPM_INDX ************************
+** DATA FILL FOR ZNWD_EPM_INDX  ****************************
+*
+*    DATA : it_ZNWD_EPM_INDX TYPE TABLE OF ZNWD_EPM_INDX.
+*
+**   fill internal table (itab)
+*    it_ZNWD_EPM_INDX = VALUE #(
+*
+*    ).
+*
+**   Delete the possible entries in the database table - in case it was already filled
+*    DELETE FROM ZNWD_EPM_INDX.
+**   insert the new table entries
+*    INSERT ZNWD_EPM_INDX FROM TABLE @IT_ZNWD_EPM_INDX.
+*
+**   check the result
+*    SELECT * FROM ZNWD_EPM_INDX INTO TABLE @it_ZNWD_EPM_INDX.
+*    Out->write( sy-dbcnt ).
+*    Out->write( 'Data inserted successfully for ZNWD_EPM_INDX table !' ).
+*
+** END OF DATA FILL FOR ZNWD_EPM_INDX ************************
 ************************************************************************
 ** DATA FILL FOR ZNWD_EPM_SESSION_LOCK  ****************************
 *
@@ -288,26 +288,26 @@ METHOD if_oo_adt_classrun~main.
 *
 ** END OF DATA FILL FOR ZNWD_EPM_SESSION_LOCK ************************
 *************************************************************************
-* DATA FILL FOR ZNWD_EPM_SNAPS  ****************************
-
-    DATA : it_ZNWD_EPM_SNAPS TYPE TABLE OF ZNWD_EPM_SNAPS.
-
-*   fill internal table (itab)
-    it_ZNWD_EPM_SNAPS = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_EPM_SNAPS.
-*   insert the new table entries
-    INSERT ZNWD_EPM_SNAPS FROM TABLE @IT_ZNWD_EPM_SNAPS.
-
-*   check the result
-    SELECT * FROM ZNWD_EPM_SNAPS INTO TABLE @it_ZNWD_EPM_SNAPS.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_EPM_SNAPS table !' ).
-
-* END OF DATA FILL FOR ZNWD_EPM_SNAPS ************************
+** DATA FILL FOR ZNWD_EPM_SNAPS  ****************************
+*
+*    DATA : it_ZNWD_EPM_SNAPS TYPE TABLE OF ZNWD_EPM_SNAPS.
+*
+**   fill internal table (itab)
+*    it_ZNWD_EPM_SNAPS = VALUE #(
+*
+*    ).
+*
+**   Delete the possible entries in the database table - in case it was already filled
+*    DELETE FROM ZNWD_EPM_SNAPS.
+**   insert the new table entries
+*    INSERT ZNWD_EPM_SNAPS FROM TABLE @IT_ZNWD_EPM_SNAPS.
+*
+**   check the result
+*    SELECT * FROM ZNWD_EPM_SNAPS INTO TABLE @it_ZNWD_EPM_SNAPS.
+*    Out->write( sy-dbcnt ).
+*    Out->write( 'Data inserted successfully for ZNWD_EPM_SNAPS table !' ).
+*
+** END OF DATA FILL FOR ZNWD_EPM_SNAPS ************************
 ************************************************************************
 * DATA FILL FOR ZNWD_EXTENSIONS  ****************************
 
