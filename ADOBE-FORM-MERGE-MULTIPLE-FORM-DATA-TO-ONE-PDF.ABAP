@@ -1,3 +1,12 @@
+*################################################################################
+**
+**  Not a complete program ONLY ESSENTIAL Code block presneted here for reference
+**
+** ADOBE PDF file preparation from multiple output spool collection 
+** 
+*################################################################################
+
+
 *-----------------------------------------------------------------------
 * Following output parameters should be assigned to FP_JOB_OPEN
 *-----------------------------------------------------------------------	
