@@ -6,8 +6,7 @@
 REPORT ztest_data_json.
 
 * Program to extract data from table and prepare a file with field name
-* Format patter (field name = value) just a convenient utility
-* To copy paste from file to class method for BTP - data insert to table
+* Format pattern ("field name" : "value",) JSON file format for ABAP cloud BTP
 
 * Actions and Activities
 
@@ -16,8 +15,6 @@ REPORT ztest_data_json.
 * Table field list is retrieved using table name
 * Respective field data is formatted and pushed to file
 
-* With Multiple insert block for records - limitation in "value #" work area record definition range 1100 ~ 1250
-* 250 charcter length line limit for file
 
 TYPES : BEGIN OF gty_det,
           tabname   TYPE tabname,
