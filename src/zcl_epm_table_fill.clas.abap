@@ -162,26 +162,6 @@ METHOD if_oo_adt_classrun~main.
 
 * END OF DATA FILL FOR ZNWD_COMPANY ************************
 ************************************************************************
-* DATA FILL FOR ZNWD_DG_PARAMS  ****************************
-
-    DATA : it_ZNWD_DG_PARAMS TYPE TABLE OF ZNWD_DG_PARAMS.
-
-*   fill internal table (itab)
-    it_ZNWD_DG_PARAMS = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_DG_PARAMS.
-*   insert the new table entries
-    INSERT ZNWD_DG_PARAMS FROM TABLE @IT_ZNWD_DG_PARAMS.
-
-*   check the result
-    SELECT * FROM ZNWD_DG_PARAMS INTO TABLE @it_ZNWD_DG_PARAMS.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_DG_PARAMS table !' ).
-
-* END OF DATA FILL FOR ZNWD_DG_PARAMS ************************
 ************************************************************************
 * DATA FILL FOR ZNWD_DG_RESULTS  ****************************
 
@@ -204,26 +184,6 @@ METHOD if_oo_adt_classrun~main.
 
 * END OF DATA FILL FOR ZNWD_DG_RESULTS ************************
 ************************************************************************
-* DATA FILL FOR ZNWD_ECMA  ****************************
-
-    DATA : it_ZNWD_ECMA TYPE TABLE OF ZNWD_ECMA.
-
-*   fill internal table (itab)
-    it_ZNWD_ECMA = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_ECMA.
-*   insert the new table entries
-    INSERT ZNWD_ECMA FROM TABLE @IT_ZNWD_ECMA.
-
-*   check the result
-    SELECT * FROM ZNWD_ECMA INTO TABLE @it_ZNWD_ECMA.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_ECMA table !' ).
-
-* END OF DATA FILL FOR ZNWD_ECMA ************************
 ************************************************************************
 * DATA FILL FOR ZNWD_EMPLOYEES  ****************************
 
@@ -456,47 +416,6 @@ METHOD if_oo_adt_classrun~main.
 *
 ** END OF DATA FILL FOR ZNWD_ITEM_AVAILABILITY ************************
 *************************************************************************
-* DATA FILL FOR ZNWD_LOCAL_USERS  ****************************
-
-    DATA : it_ZNWD_LOCAL_USERS TYPE TABLE OF ZNWD_LOCAL_USERS.
-
-*   fill internal table (itab)
-    it_ZNWD_LOCAL_USERS = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_LOCAL_USERS.
-*   insert the new table entries
-    INSERT ZNWD_LOCAL_USERS FROM TABLE @IT_ZNWD_LOCAL_USERS.
-
-*   check the result
-    SELECT * FROM ZNWD_LOCAL_USERS INTO TABLE @it_ZNWD_LOCAL_USERS.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_LOCAL_USERS table !' ).
-
-* END OF DATA FILL FOR ZNWD_LOCAL_USERS ************************
-************************************************************************
-** DATA FILL FOR ZNWD_LOCK  ****************************
-*
-*    DATA : it_ZNWD_LOCK TYPE TABLE OF ZNWD_LOCK.
-*
-**   fill internal table (itab)
-*    it_ZNWD_LOCK = VALUE #(
-*
-*    ).
-*
-**   Delete the possible entries in the database table - in case it was already filled
-*    DELETE FROM ZNWD_LOCK.
-**   insert the new table entries
-*    INSERT ZNWD_LOCK FROM TABLE @IT_ZNWD_LOCK.
-*
-**   check the result
-*    SELECT * FROM ZNWD_LOCK INTO TABLE @it_ZNWD_LOCK.
-*    Out->write( sy-dbcnt ).
-*    Out->write( 'Data inserted successfully for ZNWD_LOCK table !' ).
-*
-** END OF DATA FILL FOR ZNWD_LOCK ************************
 *************************************************************************
 * DATA FILL FOR ZNWD_LR_HEADER  ****************************
 
@@ -771,26 +690,6 @@ METHOD if_oo_adt_classrun~main.
 
 * END OF DATA FILL FOR ZNWD_REV_ITEM ************************
 ************************************************************************
-* DATA FILL FOR ZNWD_REV_MARK  ****************************
-
-    DATA : it_ZNWD_REV_MARK TYPE TABLE OF ZNWD_REV_MARK.
-
-*   fill internal table (itab)
-    it_ZNWD_REV_MARK = VALUE #(
-
-    ).
-
-*   Delete the possible entries in the database table - in case it was already filled
-    DELETE FROM ZNWD_REV_MARK.
-*   insert the new table entries
-    INSERT ZNWD_REV_MARK FROM TABLE @IT_ZNWD_REV_MARK.
-
-*   check the result
-    SELECT * FROM ZNWD_REV_MARK INTO TABLE @it_ZNWD_REV_MARK.
-    Out->write( sy-dbcnt ).
-    Out->write( 'Data inserted successfully for ZNWD_REV_MARK table !' ).
-
-* END OF DATA FILL FOR ZNWD_REV_MARK ************************
 ************************************************************************
 * DATA FILL FOR ZNWD_REV_RATING  ****************************
 
