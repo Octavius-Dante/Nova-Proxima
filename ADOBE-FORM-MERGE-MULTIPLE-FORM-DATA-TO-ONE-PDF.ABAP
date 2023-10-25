@@ -58,7 +58,7 @@
 
 
 
-*following codes should be inside loop after SFP_JOB_CLOSE
+*following codes should be inside loop after FP_JOB_CLOSE
 *------------------------------------------------------------------------------
 *&&-- Merging different pdf files into one
   CREATE OBJECT lo_pdf_merger.
