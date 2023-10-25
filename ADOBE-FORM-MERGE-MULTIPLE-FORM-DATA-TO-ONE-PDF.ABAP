@@ -7,7 +7,7 @@
 *################################################################################
 
 
-* * * ALL ESSENTAIL DECLARATIONS * * *
+* * * * ALL ESSENTAIL DECLARATIONS  * * * *
 
   DATA:lt_data            TYPE STANDARD TABLE OF tabl1024,
        lo_pdf_merger      TYPE REF TO cl_rspo_pdf_merge,
@@ -59,31 +59,24 @@
 	
 *-----------------------------------------------------------------------	
 
+        TRY.
+
+* * * *  CALL FUNCTION 'FP_FUNCTION_MODULE_NAME'  * * * *
+
+  	  CATCH  cx_fp_api_usage ##NO_HANDLER .
+          CATCH  cx_fp_api_repository ##NO_HANDLER .
+          CATCH  cx_fp_api_internal ##NO_HANDLER . 
+
+        ENDTRY.
+
+
+* * * *  CALL FUNCTION lv_fmname  * * * *
+
+
+* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
+
+
 *&&----- USE THE BELOW CODE AFTER FP_JOB_CLOSE FM IN THE PROGRAM-------
-
-  DATA:lt_data            TYPE STANDARD TABLE OF tabl1024,
-       lo_pdf_merger      TYPE REF TO cl_rspo_pdf_merge,
-       lt_pdf_table       TYPE tfpcontent,
-       lv_file            TYPE string,
-       lv_path            TYPE string,
-       lv_file_name       TYPE string,
-       lv_merged_document TYPE xstring,
-       lv_len             TYPE i,
-       lv_rc              TYPE i VALUE 0,
-       lv_filename        TYPE string VALUE 'Your File Name'.
-
-
-* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
-
-
-* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
-
-
-* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
-
-
-
-*following codes should be after FP_JOB_CLOSE
 *------------------------------------------------------------------------------
 *&&-- Merging different pdf files into one
   CREATE OBJECT lo_pdf_merger.
