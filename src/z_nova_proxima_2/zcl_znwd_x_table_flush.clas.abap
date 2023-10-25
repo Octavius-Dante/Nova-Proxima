@@ -92,12 +92,6 @@ CLASS zcl_znwd_x_table_flush IMPLEMENTATION.
       Out->write( 'Data deleted successfully for  ZNWD_ITELO_DEPTX ! ' ).
     ENDIF.
 
-    DELETE FROM znwd_local_usrx.
-    IF sy-dbcnt NE 0.
-      Out->write( sy-dbcnt ).
-      Out->write( 'Data deleted successfully for  ZNWD_LOCAL_USRX ! ' ).
-    ENDIF.
-
     DELETE FROM znwd_lr_headerx.
     IF sy-dbcnt NE 0.
       Out->write( sy-dbcnt ).

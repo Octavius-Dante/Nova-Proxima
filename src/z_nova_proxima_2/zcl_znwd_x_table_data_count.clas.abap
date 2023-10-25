@@ -16,7 +16,7 @@ CLASS zcl_znwd_x_table_data_count IMPLEMENTATION.
 
     SELECT  * FROM znwd_adx INTO TABLE @DATA(lt_znwd_adx).
     IF sy-subrc EQ 0.
-      Out->write( 'ZNWD_ADX TABLE RECORDS :').
+      Out->write( 'ZNWD_ADX TABLE RECORDS :' ).
       Out->write( sy-dbcnt ).
     ENDIF.
 
@@ -89,12 +89,6 @@ CLASS zcl_znwd_x_table_data_count IMPLEMENTATION.
     SELECT  * FROM znwd_itelo_deptx INTO TABLE @DATA(lt_znwd_itelo_deptx).
     IF sy-subrc EQ 0.
       Out->write( 'ZNWD_ITELO_DEPTX TABLE RECORDS :').
-      Out->write( sy-dbcnt ).
-    ENDIF.
-
-    SELECT  * FROM znwd_local_usrx INTO TABLE @DATA(lt_znwd_local_usrx).
-    IF sy-subrc EQ 0.
-      Out->write( 'ZNWD_LOCAL_USRX TABLE RECORDS :').
       Out->write( sy-dbcnt ).
     ENDIF.
 
