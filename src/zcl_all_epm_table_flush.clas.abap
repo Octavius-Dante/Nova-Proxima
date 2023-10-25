@@ -69,17 +69,17 @@ CLASS zcl_all_epm_table_flush IMPLEMENTATION.
       Out->write( 'Data deleted successfully for znwd_employees table !' ).
     ENDIF.
 
-    DELETE FROM znwd_epm_indx.
-    IF sy-dbcnt NE 0.
-      Out->write( sy-dbcnt ).
-      Out->write( 'Data deleted successfully for znwd_epm_indx table !' ).
-    ENDIF.
+*    DELETE FROM znwd_epm_indx.
+*    IF sy-dbcnt NE 0.
+*      Out->write( sy-dbcnt ).
+*      Out->write( 'Data deleted successfully for znwd_epm_indx table !' ).
+*    ENDIF.
 
-    DELETE FROM znwd_epm_snaps.
-    IF sy-dbcnt NE 0.
-      Out->write( sy-dbcnt ).
-      Out->write( 'Data deleted successfully for znwd_epm_snaps table !' ).
-    ENDIF.
+*    DELETE FROM znwd_epm_snaps.
+*    IF sy-dbcnt NE 0.
+*      Out->write( sy-dbcnt ).
+*      Out->write( 'Data deleted successfully for znwd_epm_snaps table !' ).
+*    ENDIF.
 
     DELETE FROM znwd_extensions.
     IF sy-dbcnt NE 0.
