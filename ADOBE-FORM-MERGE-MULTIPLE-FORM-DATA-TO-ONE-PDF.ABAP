@@ -1,6 +1,6 @@
 *################################################################################
 **
-**  Not a complete program ONLY ESSENTIAL Code block presneted here for reference
+**  Not a complete program ONLY ESSENTIAL Code block presented here for reference
 **
 ** ADOBE PDF file preparation from multiple output spool collection 
 ** 
