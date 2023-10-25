@@ -3,7 +3,7 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: '# test 1'
-define view ZCDS_609879_X1 as select from znwd_poix
+define view ZCDS_609879_X1 as select from znwd_po_ix
 {
    // node_key as NodeKey,
     parent_key as ParentKey,
@@ -17,7 +17,7 @@ define view ZCDS_609879_X1 as select from znwd_poix
     
 */    
 } group by //znwd_poix.node_key ,
-  znwd_poix.parent_key  /*,
+  znwd_po_ix.parent_key  /*,
 product_guid,
 note_guid,
 currency_code,

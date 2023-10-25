@@ -122,12 +122,6 @@ CLASS zcl_znwd_x_table_data_count IMPLEMENTATION.
       Out->write( sy-dbcnt ).
     ENDIF.
 
-    SELECT  * FROM znwd_poix INTO TABLE @DATA(lt_znwd_poix).
-    IF sy-subrc EQ 0.
-      Out->write( 'ZNWD_POIX TABLE RECORDS :').
-      Out->write( sy-dbcnt ).
-    ENDIF.
-
     SELECT  * FROM znwd_pox INTO TABLE @DATA(lt_znwd_pox).
     IF sy-subrc EQ 0.
       Out->write( 'ZNWD_POX TABLE RECORDS :').
@@ -146,6 +140,12 @@ CLASS zcl_znwd_x_table_data_count IMPLEMENTATION.
       Out->write( sy-dbcnt ).
     ENDIF.
 
+    SELECT  * FROM znwd_po_ix INTO TABLE @DATA(lt_znwd_po_ix).
+    IF sy-subrc EQ 0.
+      Out->write( 'ZNWD_PO_IX TABLE RECORDS :').
+      Out->write( sy-dbcnt ).
+    ENDIF.
+
     SELECT  * FROM znwd_po_slx INTO TABLE @DATA(lt_znwd_po_slx).
     IF sy-subrc EQ 0.
       Out->write( 'ZNWD_PO_SLX TABLE RECORDS :').
@@ -161,12 +161,6 @@ CLASS zcl_znwd_x_table_data_count IMPLEMENTATION.
     SELECT  * FROM znwd_rev_itemx INTO TABLE @DATA(lt_znwd_rev_itemx).
     IF sy-subrc EQ 0.
       Out->write( 'ZNWD_REV_ITEMX TABLE RECORDS :').
-      Out->write( sy-dbcnt ).
-    ENDIF.
-
-    SELECT  * FROM znwd_rev_marx INTO TABLE @DATA(lt_znwd_rev_marx).
-    IF sy-subrc EQ 0.
-      Out->write( 'ZNWD_REV_MARX TABLE RECORDS :').
       Out->write( sy-dbcnt ).
     ENDIF.
 
