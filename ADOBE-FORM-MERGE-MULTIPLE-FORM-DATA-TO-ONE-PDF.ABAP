@@ -7,6 +7,30 @@
 *################################################################################
 
 
+* * * ALL ESSENTAIL DECLARATIONS * * *
+
+  DATA:lt_data            TYPE STANDARD TABLE OF tabl1024,
+       lo_pdf_merger      TYPE REF TO cl_rspo_pdf_merge,
+       lt_pdf_table       TYPE tfpcontent,
+       lv_file            TYPE string,
+       lv_path            TYPE string,
+       lv_file_name       TYPE string,
+       lv_merged_document TYPE xstring,
+       lv_len             TYPE i,
+       lv_rc              TYPE i VALUE 0,
+       lv_filename        TYPE string VALUE 'Your File Name'.
+
+
+* This should be before loop start
+*------------------------------------------------------------------------------
+    DATA(lt_fin) = lt_pdf_table.
+    CLEAR lt_fin.
+*------------------------------------------------------------------------------
+
+
+* * * *  STARTING OF LOOP  * * * *
+
+
 *-----------------------------------------------------------------------
 * Following output parameters should be assigned to FP_JOB_OPEN
 *-----------------------------------------------------------------------	
@@ -49,16 +73,17 @@
        lv_filename        TYPE string VALUE 'Your File Name'.
 
 
-
-* This should be before loop start
-*------------------------------------------------------------------------------
-    DATA(lt_fin) = lt_pdf_table.
-    CLEAR lt_fin.
-*------------------------------------------------------------------------------
+* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
 
 
+* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
 
-*following codes should be inside loop after FP_JOB_CLOSE
+
+* * * *  CALL FUNCTION 'FP_JOB_CLOSE'  * * * *
+
+
+
+*following codes should be after FP_JOB_CLOSE
 *------------------------------------------------------------------------------
 *&&-- Merging different pdf files into one
   CREATE OBJECT lo_pdf_merger.
