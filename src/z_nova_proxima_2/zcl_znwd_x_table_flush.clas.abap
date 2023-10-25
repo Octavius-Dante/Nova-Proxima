@@ -44,22 +44,10 @@ CLASS zcl_znwd_x_table_flush IMPLEMENTATION.
       Out->write( 'Data deleted successfully for  ZNWD_COMPANYX ! ' ).
     ENDIF.
 
-    DELETE FROM znwd_dg_paramsx.
-    IF sy-dbcnt NE 0.
-      Out->write( sy-dbcnt ).
-      Out->write( 'Data deleted successfully for  ZNWD_DG_PARAMSX ! ' ).
-    ENDIF.
-
     DELETE FROM znwd_dg_resultsx.
     IF sy-dbcnt NE 0.
       Out->write( sy-dbcnt ).
       Out->write( 'Data deleted successfully for  ZNWD_DG_RESULTSX ! ' ).
-    ENDIF.
-
-    DELETE FROM znwd_ecmax.
-    IF sy-dbcnt NE 0.
-      Out->write( sy-dbcnt ).
-      Out->write( 'Data deleted successfully for  ZNWD_ECMAX ! ' ).
     ENDIF.
 
     DELETE FROM znwd_employeesx.
