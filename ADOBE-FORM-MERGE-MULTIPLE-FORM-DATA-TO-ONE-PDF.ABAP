@@ -30,7 +30,6 @@
 
 * * * *  STARTING OF LOOP  * * * *
 
-
 *-----------------------------------------------------------------------
 * Following output parameters should be assigned to FP_JOB_OPEN
 *-----------------------------------------------------------------------	
@@ -78,12 +77,13 @@
 
 *&&----- USE THE BELOW CODE AFTER FP_JOB_CLOSE FM IN THE PROGRAM-------
 *------------------------------------------------------------------------------
-*&&-- Merging different pdf files into one
-  CREATE OBJECT lo_pdf_merger.
 
-  CALL FUNCTION 'FP_GET_PDF_TABLE'
+CALL FUNCTION 'FP_GET_PDF_TABLE'
     IMPORTING
       e_pdf_table = lt_pdf_table.
+
+*&&-- Merging different pdf files into one
+  CREATE OBJECT lo_pdf_merger.
 
 * BECAUSE OF THIS ASSIGNMENT MULTIPLE PDF PAGES CAN BE MERGED TO SINGLE FILE
    APPEND LINES OF lt_pdf_table TO lt_fin.
@@ -99,6 +99,7 @@
 												   
 *------------------------------------------------------------------------------
 
+* * * * END OF LOOP  * * * *
 
 
 
