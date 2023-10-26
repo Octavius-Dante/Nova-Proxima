@@ -13,23 +13,23 @@ Watch the videos of the course **Building Apps with the ABAP RESTful Application
        
        
 ## Week 1: Introduction - ABAP RESTful Application Programming Model
-Find the various hands-on exercises for this week in folder **[week1](/week1/README.md)** of this GitHub repository. 
+Find the various hands-on exercises for this week in folder **[week1](ABAP_Platform_RAP_OPEN_SAP/week1/README.md)** of this GitHub repository. 
         
     
 ## Week 2: Developing a Read-Only List Report App
-Find the various hands-on exercises for this week in folder **[week2](/week2/README.md)** of this GitHub repository.    
+Find the various hands-on exercises for this week in folder **[week2](ABAP_Platform_RAP_OPEN_SAP/week2/README.md)** of this GitHub repository.    
     
     
 ## Week 3: Enabling the Transactional Behavior of an App
-Find the various hands-on exercises for this week in folder **[week3](/week3/README.md)** of this GitHub repository. 
+Find the various hands-on exercises for this week in folder **[week3](ABAP_Platform_RAP_OPEN_SAP/week3/README.md)** of this GitHub repository. 
         
     
 ## Week 4: Dealing with Existing Code
-Find the various hands-on exercises for this week in folder **[week4](/week4/README.md)** of this GitHub repository. 
+Find the various hands-on exercises for this week in folder **[week4](ABAP_Platform_RAP_OPEN_SAP/week4/README.md)** of this GitHub repository. 
     
     
 ## Week 5: Service Consumption and Web APIs
-Find the various hands-on exercises for this week in folder **[week5](/week5/README.md)** of this GitHub repository. 
+Find the various hands-on exercises for this week in folder **[week5](ABAP_Platform_RAP_OPEN_SAP/week5/README.md)** of this GitHub repository. 
     
         
 ## License
