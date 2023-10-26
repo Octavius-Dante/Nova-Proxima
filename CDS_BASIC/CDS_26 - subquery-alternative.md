@@ -56,3 +56,52 @@ define view ZMMV_MAT_DOC_ITEM_REV_STATUS as
   }
 
 ```
+
+The second view filters out the reversed & reversal documents from the first view, which leaves effective material documents only.
+
+``` asddls
+
+@AbapCatalog.sqlViewName: 'ZMMV_002'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Effective material document items'
+define view ZMMV_EFFECTIVE_MAT_DOC_ITEM as 
+  select distinct from ZMMV_MAT_DOC_ITEM_REV_STATUS
+  {
+    key mblnr1 as mblnr,
+    key mjahr1 as mjahr,
+    key zeile1 as zeile
+  }
+  where
+    sjahr1 = '0000' and
+    (
+      mjahr2 = '0000' or
+      mjahr2 is null
+    ) and
+    (
+      sjahr2 = '0000' or
+      sjahr2 is null
+    )
+
+```
+
+Here is an AMDP code sample containing NOT EXISTS.
+
+``` abap
+
+    open_obligations =
+      select  * from :obligations as _obl
+      where   not exists ( select mandt from :obligations_completed_due_to_recipient
+                           where werks = _obl.werks and
+                                 mdvid = _obl.mdvid );
+
+    missing_plant_views =
+      select  distinct _obl.werks, _obl.mdvid
+      from    :open_obligations as _obl
+      where   not exists ( select mandt from ZBCT_MDF_DRSENT as _sent
+                           where _sent.mandt = :mandt      and
+                                 _sent.reqid = :reqid      and
+                                 _sent.mdvid = _obl.mdvid  and
+                                 _sent.rcpnt = _obl.drrcp );
+
+```
