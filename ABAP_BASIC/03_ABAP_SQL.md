@@ -1171,6 +1171,52 @@ SELECT comp1, comp2, comp3
     ( SELECT comp1 FROM dbtab2
       WHERE comp1 = tab1~comp1 AND comp2 = tab1~comp2 )
   INTO ...
+
+** Example 1  **
+
+SELECT m1~vbeln_im m1~vbelp_im m1~mblnr smbln      
+    INTO CORRESPONDING FIELDS OF TABLE lt_mseg
+    FROM mseg AS m1
+    INNER JOIN mseg AS m2 ON m1~mblnr = m2~smbln
+                         AND m1~mjahr = m2~sjahr
+                         AND m1~zeile = m2~smblp
+    FOR ALL ENTRIES IN lt_vbfa
+    WHERE 
+      AND m2~bwart = '102'
+      AND 0 = ( select SUM( ( CASE
+        when SHKZG = 'S' THEN 1
+        when SHKZG = 'H' THEN -1
+        else 0
+        END ) *MENGE ) MENGE
+        into lt_mseg-summ
+        from mseg
+        where
+        VBELN_IM = m1~vbeln_im
+        and VBELP_IM = m1~vbelp_im
+        ).
+
+** Example 2  **
+
+SELECT vbeln UP TO 100 ROWS
+ FROM vbfa
+ INTO TABLE @DATA(lt_vbfa).
+
+DATA(rt_vbeln) = VALUE range_vbeln_va_tab( FOR GROUPS val OF <line> IN lt_vbfa GROUP BY ( low = <line>-vbeln ) WITHOUT MEMBERS ( sign = 'I' option = 'EQ' low = val-low ) ).
+
+SELECT m1~vbeln_im, m1~vbelp_im, m1~mblnr, m2~smbln
+  INTO TABLE @DATA(lt_mseg)
+  FROM mseg AS m1
+  JOIN mseg AS m2
+    ON m1~mblnr = m2~smbln
+   AND m1~mjahr = m2~sjahr
+   AND m1~zeile = m2~smblp
+ WHERE m2~bwart = '102'
+   AND m1~vbeln_im IN ( SELECT vbelv FROM vbfa WHERE vbelv IN @rt_vbeln  )
+ GROUP BY m1~vbeln_im, m1~vbelp_im, m1~mblnr, m2~smbln
+HAVING SUM( CASE  m1~shkzg WHEN 'H' THEN 1  WHEN 'S' THEN -1 ELSE 0 END * m1~menge ) = 0.
+
+
+
 ```
 
 ### Combining Data of Multiple Database Tables
