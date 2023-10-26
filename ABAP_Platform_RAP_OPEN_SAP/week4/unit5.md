@@ -149,7 +149,7 @@ Find the source code of the created entities in the **[sources](/week4/sources)*
 Do not forget to replace all the occurrences of `####` with your chosen suffix in the copied source code.  
 
 ## Next exercise
-[Week 5: Service consumption and Web APIs](/week5/README.md)
+[Week 5: Service consumption and Web APIs](/ABAP_Platform_RAP_OPEN_SAP/week5/README.md)
 
 
 
