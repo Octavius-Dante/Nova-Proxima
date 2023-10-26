@@ -264,4 +264,4 @@ Find the source code of the enhanced CDS behavior definitions (base and projecti
 Do not forget to replace all the occurrences of `####` in the copied source code with your chosen suffix.
 
 ## Next exercise
-[Week 4: Dealing with Existing Code](/week4/README.md)
+[Week 4: Dealing with Existing Code](/ABAP_Platform_RAP_OPEN_SAP/week4/README.md)
