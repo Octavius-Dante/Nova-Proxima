@@ -135,4 +135,4 @@ Find the source code for the created class in the **[/week1/sources](/week1/sour
       
 Do not forget to replace all the occurrences of `####` with your chosen suffix in the copied source code.
 ## Next excercise
-[Week 2: Developing a Read-Only List Report App](/week2/README.md)
+[Week 2: Developing a Read-Only List Report App](/ABAP_Platform_RAP_OPEN_SAP/week2/README.md)
