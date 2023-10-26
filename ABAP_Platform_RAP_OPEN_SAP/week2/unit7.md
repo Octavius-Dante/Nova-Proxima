@@ -287,5 +287,5 @@ Find the source code for the created CDS access controls in the **[/week2/source
 Do not forget to replace all the occurrences of `####` with your chosen suffix in the copied source code.  
    
 ## Next exercise
-[WEEK 3: Enabling The Transactional Behavior of an App](/week3/README.md)
+[WEEK 3: Enabling The Transactional Behavior of an App](/ABAP_Platform_RAP_OPEN_SAP/week3/README.md)
 
