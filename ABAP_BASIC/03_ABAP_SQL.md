@@ -1201,7 +1201,8 @@ SELECT vbeln UP TO 100 ROWS
  FROM vbfa
  INTO TABLE @DATA(lt_vbfa).
 
-DATA(rt_vbeln) = VALUE range_vbeln_va_tab( FOR GROUPS val OF <line> IN lt_vbfa GROUP BY ( low = <line>-vbeln ) WITHOUT MEMBERS ( sign = 'I' option = 'EQ' low = val-low ) ).
+DATA(rt_vbeln) = VALUE range_vbeln_va_tab( FOR GROUPS val OF <line> IN lt_vbfa
+GROUP BY ( low = <line>-vbeln ) WITHOUT MEMBERS ( sign = 'I' option = 'EQ' low = val-low ) ).
 
 SELECT m1~vbeln_im, m1~vbelp_im, m1~mblnr, m2~smbln
   INTO TABLE @DATA(lt_mseg)
