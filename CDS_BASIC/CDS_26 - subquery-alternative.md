@@ -8,6 +8,7 @@ The requirement was to exclude material document items (MSEG) which were reverse
 If I was writing a regular ABAP SQL statement, 
 I could easily achieve this with the help of a NOT EXISTS subquery. Check the code snippet below – I have excluded unrelated WHERE conditions for simplicity.
 
+
 ``` abap
 
 SELECT mblnr, mjahr, zeile 
@@ -25,7 +26,9 @@ SELECT mblnr, mjahr, zeile
 
 ```
 
+
 This logic doesn’t work in CDS views directly due to lack of subquery support. To get the same result using CDS views, I have split the query into two views. The first one returns a wide list where original and reversal MSEG records are listed side by side.
+
 
 ``` asddls
 
@@ -57,7 +60,9 @@ define view ZMMV_MAT_DOC_ITEM_REV_STATUS as
 
 ```
 
+
 The second view filters out the reversed & reversal documents from the first view, which leaves effective material documents only.
+
 
 ``` asddls
 
@@ -85,7 +90,9 @@ define view ZMMV_EFFECTIVE_MAT_DOC_ITEM as
 
 ```
 
+
 Here is an AMDP code sample containing NOT EXISTS.
+
 
 ``` abap
 
@@ -105,3 +112,5 @@ Here is an AMDP code sample containing NOT EXISTS.
                                  _sent.rcpnt = _obl.drrcp );
 
 ```
+
+
