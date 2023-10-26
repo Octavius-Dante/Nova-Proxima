@@ -1281,6 +1281,7 @@ in the main query to sort the results. For each flight connection of the
 selected airline, the total number of occupied seats is stored in the
 internal table.
 ``` abap
+
 WITH
 +connections AS (
   SELECT zdemo_abap_flsch~carrid, carrname, connid, cityfrom, cityto
@@ -1288,21 +1289,89 @@ WITH
     INNER JOIN zdemo_abap_carr
     ON zdemo_abap_carr~carrid = zdemo_abap_flsch~carrid
     WHERE zdemo_abap_flsch~carrid BETWEEN 'AA' AND 'JL' ),
+
 +sum_seats AS (
   SELECT carrid, connid, SUM( seatsocc ) AS sum_seats
     FROM zdemo_abap_fli
     WHERE carrid BETWEEN 'AA' AND 'JL'
     GROUP BY carrid, connid ),
+
 +result( name, connection, departure, arrival, occupied ) AS (
   SELECT carrname, c~connid, cityfrom, cityto, sum_seats
     FROM +connections AS c
     INNER JOIN +sum_seats AS s
     ON c~carrid = s~carrid AND c~connid = s~connid )
+
 SELECT *
   FROM +result
   ORDER BY name, connection
   INTO TABLE @DATA(result).
+
+* Second Example 
+
+DATA carrids TYPE RANGE OF sflight-carrid. 
+
+... 
+
+WITH 
+  +flights AS ( SELECT FROM sflight 
+                       FIELDS carrid, 
+                              connid, 
+                             AVG( seatsocc AS DEC( 16,2 ) ) AS avg 
+                       WHERE carrid IN @carrids 
+                       GROUP BY carrid, connid 
+                       ORDER BY carrid, connid UP TO 1 ROWS ) 
+                       ##db_feature_mode[limit_in_subselect_or_cte]
+
+  SELECT FROM +flights AS f 
+           INNER JOIN scarr AS s 
+             ON f~carrid = s~carrid 
+         FIELDS s~carrname, f~connid, f~avg 
+         ORDER BY s~carrname, f~connid 
+         INTO TABLE @DATA(itab).
+
 ```
+
+#### Dynamic sub query building example
+
+This example demonstrates a common table expression in which all clauses of the subquery, 
+and the main query too, are specified as dynamic tokens. In the INTO clause, 
+the addition NEW and the declaration operator @DATA(...) are used to declare 
+a generic data reference variable that points to the result in an anonymous data object.
+
+``` abap
+
+DATA carrid TYPE spfli-carrid VALUE 'LH'. 
+cl_demo_input=>request( CHANGING field = carrid ). 
+
+DATA: 
+  sel_sub1 TYPE string VALUE `cityfrom AS city`, 
+  sel_sub2 TYPE string VALUE `cityto AS city`, 
+  frm_sub  TYPE string VALUE `spfli`, 
+  whr_sub  TYPE string VALUE `carrid = @carrid`, 
+  sel_main TYPE string VALUE `*`, 
+  frm_main TYPE string VALUE `sgeocity`, 
+  whr_main TYPE string VALUE `city IN ( SELECT city FROM +cities )`. 
+
+WITH 
+  +cities AS ( 
+    SELECT (sel_sub1) 
+           FROM (frm_sub) 
+           WHERE (whr_sub) 
+    UNION DISTINCT 
+    SELECT (sel_sub1) 
+           FROM (frm_sub) 
+           WHERE (whr_sub) ) 
+  SELECT (sel_main) 
+         FROM (frm_main) 
+         WHERE (whr_main) 
+         INTO TABLE NEW @DATA(result). 
+
+ASSIGN result->* TO FIELD-SYMBOL(<fs>). 
+cl_demo_output=>display( <fs> ).
+
+```
+
 
 <p align="right"><a href="#top">⬆️ back to top</a></p>
 
