@@ -14,7 +14,7 @@ ENDCLASS.
 CLASS zcl_all_epm_table_flush IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
-*
+
 *    DELETE FROM znwd_ad.
 *    IF sy-dbcnt NE 0.
 *      Out->write( sy-dbcnt ).
