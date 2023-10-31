@@ -28,6 +28,15 @@ CLASS ZCL_ABAP_FILE_UPLOAD IMPLEMENTATION.
 
  METHOD if_http_service_extension~handle_request.
 
+**********************************************************************
+* Note : Make sure the json file text fields
+* should not have any double quotes in field value or upload fails
+* there wont be failure message but records wont be loaded into table
+*
+* Example [ {"field_name":"Field_value " so and so", {} ]
+* here field value has a double quote in between whole text this affects
+**********************************************************************
+
     CASE request->get_method(  ).
 
       WHEN CONV string( if_web_http_client=>get ).
