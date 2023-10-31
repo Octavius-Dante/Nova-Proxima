@@ -197,6 +197,13 @@ FORM process USING pv_table TYPE tabname16.
         lv_field = ls_fld-fieldname.
         ASSIGN COMPONENT lv_field OF STRUCTURE <fs_table> TO <fld_value>.
 
+* ############################################################################
+* IF it is a Text field containing Double quotes " it needs to be changed 
+* or json file wont work during data load in abap cloud BTP class
+* REPLACE ALL OCCURRENCES OF '"' IN <fld_value> WITH ''. 
+* implement your suitable replacement text for double quotes
+* ############################################################################
+
 * DURING FIRST FIELD ASSIGNMENT
         IF sy-index EQ 1.
 
