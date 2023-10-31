@@ -14,6 +14,10 @@ ENDCLASS.
 CLASS zcl_znwd_x_table_flush IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
+* UNCOMMENT THE NEEDED TABLES FOR DELETION
+* AND ACTIVATE THE CLASS
+* RUN THE CLASS AS APPLICATION ABAP CONSOLE
+
 *    DELETE FROM znwd_adx.
 *    IF sy-dbcnt NE 0.
 *      Out->write( sy-dbcnt ).
