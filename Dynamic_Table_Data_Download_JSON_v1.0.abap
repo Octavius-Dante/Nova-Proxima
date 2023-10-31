@@ -247,7 +247,7 @@ FORM process USING pv_table TYPE tabname16.
       CALL METHOD cl_gui_frontend_services=>file_save_dialog
         EXPORTING
           window_title              = 'Save Form'
-          default_extension         = 'txt'
+          default_extension         = 'json'
           default_file_name         = lv_filename
           prompt_on_overwrite       = 'X'
         CHANGING
@@ -276,6 +276,7 @@ FORM process USING pv_table TYPE tabname16.
         filename                = lv_file
         filetype                = 'ASC'
 *       write_field_separator   = 'X'
+        codepage                = '4310'
       TABLES
         data_tab                = lt_text
       EXCEPTIONS
