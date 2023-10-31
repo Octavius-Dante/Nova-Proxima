@@ -200,7 +200,13 @@ FORM process USING pv_table TYPE tabname16.
 * ############################################################################
 * IF it is a Text field containing Double quotes " it needs to be changed 
 * or json file wont work during data load in abap cloud BTP class
-* REPLACE ALL OCCURRENCES OF '"' IN <fld_value> WITH ''. 
+
+*** IF Table field is a text type containing Double quotes "
+*        IF ls_fld-datatype EQ 'CHAR'
+*          AND ls_fld-leng GT 10.
+*          REPLACE ALL OCCURRENCES OF '"' IN <fld_value> WITH 'change text'.
+*        ENDIF.
+
 * implement your suitable replacement text for double quotes
 * ############################################################################
 
