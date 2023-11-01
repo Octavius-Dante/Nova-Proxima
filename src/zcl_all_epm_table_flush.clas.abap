@@ -18,7 +18,7 @@ CLASS zcl_all_epm_table_flush IMPLEMENTATION.
 * UNCOMMENT THE NEEDED TABLES FOR DELETION
 * AND ACTIVATE THE CLASS
 * RUN THE CLASS AS APPLICATION ABAP CONSOLE
-
+*
 *    DELETE FROM znwd_ad.
 *    IF sy-dbcnt NE 0.
 *      Out->write( sy-dbcnt ).
