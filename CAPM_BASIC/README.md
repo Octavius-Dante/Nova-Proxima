@@ -3,7 +3,7 @@
 </br>
 </br>
 
-**Local machine needs following 2 things to be installed 
+**Local machine needs following 2 things to be installed**
 
 </br>
 
