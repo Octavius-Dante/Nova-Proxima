@@ -36,6 +36,7 @@
     <img src="./files/1-cf_login.png" >
    </br>
    </br>
+   --------
 2. Checking the available buildpacks in the cloud environment
    </br>
    </br>
