@@ -1,7 +1,8 @@
 ## Cloud application programming model
 
 
-Local machine needs to be instaleld with 2 things 
+Local machine needs following 2 things to be installed 
+</br>
 - [x] Git hub SCM https://git-scm.com/download/win
 - [x] Cloud foundry CLI (Command line interface) https://github.com/cloudfoundry/cli#downloads
 
