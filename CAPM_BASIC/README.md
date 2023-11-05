@@ -1,7 +1,7 @@
 ## Cloud application programming model
 
 
-**Pre-requisities before deployment**
+**Pre-requisities before app deployment**
 
 - [x] App should have manifest.yml file 
 - [x] App should have main file 
