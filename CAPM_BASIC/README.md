@@ -7,7 +7,11 @@
 - [x] App should have main file 
 - [x] then app file respective language *.go , *.js *. etc 
 
-**manifest file should have :**
+</br>
+</br>
+</br>
+
+**Manifest file should have :**
 
 - [x] app name 
 - [x] app memeory size 
