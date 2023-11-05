@@ -1,7 +1,9 @@
 ## Cloud application programming model
 
 
-Pre-requisities before deployment 
+## Pre-requisities before deployment
+
+
 App should have manifest.yml file 
 App should have main file 
 then app file *.go , *.js *. etc 
