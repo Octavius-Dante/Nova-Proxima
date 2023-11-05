@@ -133,10 +133,10 @@
    </br>
    
    ```bat
-   cf instance scale <app name>
+   cf scale <app name> i < how many instance need to eb increased mention number>
    ```
    </br>
    </br>
-    <img src="./files/9-cf_.png" >
+    <img src="./files/9-cf_scale_i.png" >
    </br>
    </br>
