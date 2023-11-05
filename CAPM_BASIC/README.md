@@ -108,3 +108,15 @@
     <img src="./files/7-cf_scale.png" >
    </br>
    </br>
+8. Delete app
+   </br>
+   </br>
+   
+   ```bat
+   cf delete <app name>
+   ```
+   </br>
+   </br>
+    <img src="./files/8-cf_delete.png" >
+   </br>
+   </br>
