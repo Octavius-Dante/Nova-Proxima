@@ -96,5 +96,15 @@
     <img src="./files/6-cf_logs.png" >
    </br>
    </br>
-
-
+7. Increasing RAM memory allocation for app
+   </br>
+   </br>
+   
+   ```bat
+   cf scale <app name> -m 512M
+   ```
+   </br>
+   </br>
+    <img src="./files/7-cf_scale.png" >
+   </br>
+   </br>
