@@ -26,12 +26,17 @@
 
 1. Logging In
    </br>
+   ```bat
+   cf login
+   ```
+   </br>
+   </br>
     <img src="./files/1-cf_login.png" >
    </br>
-2. Checking the available buildpacks in the cloud environment 
-3. Cloning Git hub repositiory link to lcoal directory 
-4. Deploying app to cloud 
-5. Checking list of available apps in cloud (deployed)
-6. Checking log status for a specific app 
+1. Checking the available buildpacks in the cloud environment 
+2. Cloning Git hub repositiory link to lcoal directory 
+3. Deploying app to cloud 
+4. Checking list of available apps in cloud (deployed)
+5. Checking log status for a specific app 
 
 
