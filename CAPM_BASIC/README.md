@@ -21,7 +21,7 @@
 </br>
 </br>
 
-## Commands involved in General activities : 
+## Commands involved in general & app deployment activities : 
 
 1. Logging In
 2. Checking the available buildpacks in the cloud environment 
