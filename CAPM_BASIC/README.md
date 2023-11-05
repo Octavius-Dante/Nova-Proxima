@@ -26,12 +26,14 @@
 
 1. Logging In
    </br>
+   </br>
    ```bat
    cf login
    ```
    </br>
    </br>
     <img src="./files/1-cf_login.png" >
+   </br>
    </br>
 1. Checking the available buildpacks in the cloud environment 
 2. Cloning Git hub repositiory link to lcoal directory 
