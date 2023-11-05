@@ -133,7 +133,7 @@
    </br>
    
    ```bat
-   cf scale <app name> i < how many instance need to eb increased mention number>
+   cf scale <app name> i <mention the number of instance need to be increased>
    ```
    </br>
    </br>
