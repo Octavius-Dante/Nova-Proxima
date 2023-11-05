@@ -103,7 +103,7 @@ CALL FUNCTION 'FP_GET_PDF_TABLE'
 
 
 
-* fOLLOWING CODE SHOULD BE OUTSIDE LOOP
+* FOLLOWING CODE SHOULD BE OUTSIDE LOOP
 *------------------------------------------------------------------------------
 												   
   CALL FUNCTION 'SCMS_XSTRING_TO_BINARY'
