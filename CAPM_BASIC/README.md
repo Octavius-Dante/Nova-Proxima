@@ -127,3 +127,16 @@
     <img src="./files/8-cf_delete.png" >
    </br>
    </br>
+
+9. Increase the instance for improving performance depends on (data volume)
+   </br>
+   </br>
+   
+   ```bat
+   cf instance scale <app name>
+   ```
+   </br>
+   </br>
+    <img src="./files/9-cf_.png" >
+   </br>
+   </br>
