@@ -6,6 +6,7 @@ Local machine needs following 2 things to be installed
 - [x] Git hub SCM https://git-scm.com/download/win
 - [x] Cloud foundry CLI (Command line interface) https://github.com/cloudfoundry/cli#downloads
 
+</br>
 
 **Pre-requisities before app deployment**
 
@@ -14,7 +15,6 @@ Local machine needs following 2 things to be installed
 - [x] then app file respective language *.go , *.js *. etc 
 
 </br>
-
 
 **Manifest file should have - following components :**
 
