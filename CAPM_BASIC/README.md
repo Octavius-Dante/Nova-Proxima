@@ -1,6 +1,11 @@
 ## Cloud application programming model
 
 
+Local machine needs to be instaleld with 2 things 
+- [x] Git hub SCM https://git-scm.com/download/win
+- [x] Cloud foundry CLI (Command line interface) https://github.com/cloudfoundry/cli#downloads
+
+
 **Pre-requisities before app deployment**
 
 - [x] App should have manifest.yml file 
