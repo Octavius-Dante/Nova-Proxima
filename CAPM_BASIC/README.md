@@ -23,7 +23,9 @@
 
 ## Commands involved in general & app deployment activities : 
 
+
 1. Logging In
+    <img src="./files/1-cf_login.png" >
 2. Checking the available buildpacks in the cloud environment 
 3. Cloning Git hub repositiory link to lcoal directory 
 4. Deploying app to cloud 
