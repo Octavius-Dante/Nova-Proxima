@@ -16,7 +16,7 @@
 - [x] app memeory size 
 - [x] instance number 
 - [x] and the URL to be involved in the app execution
- (custom -defined url  or default cloud based url) // recommended -let cloud application to decide the url.
+> (custom -defined url  or default cloud based url) // recommended -let cloud application to decide the url.
 
 
 Commands involved in General activities : 
