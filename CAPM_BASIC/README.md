@@ -10,7 +10,7 @@
 </br>
 
 
-**Manifest file should have :**
+**Manifest file should have - following components :**
 
 - [x] App name 
 - [x] App memeory size 
