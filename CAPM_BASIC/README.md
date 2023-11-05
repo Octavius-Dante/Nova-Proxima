@@ -53,7 +53,7 @@
    </br>
    
    ```bat
-   gi clone
+   gi clone <Repository link from github>
    ```
    </br>
    </br>
