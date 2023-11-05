@@ -18,8 +18,10 @@
 - [x] Then URL to be involved in the app execution
 > (custom -defined url  or default cloud based url) // recommended -let cloud application to decide the url.
 
+</br>
+</br>
 
-Commands involved in General activities : 
+## Commands involved in General activities : 
 
 1. Logging In
 2. Checking the available buildpacks in the cloud environment 
