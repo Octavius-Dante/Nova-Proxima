@@ -89,7 +89,7 @@
    </br>
    
    ```bat
-   cf logs
+   cf logs <appname> --recent
    ```
    </br>
    </br>
