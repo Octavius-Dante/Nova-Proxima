@@ -36,7 +36,7 @@
     <img src="./files/1-cf_login.png" >
    </br>
    </br>
-   --------
+   
 2. Checking the available buildpacks in the cloud environment
    </br>
    </br>
@@ -49,6 +49,7 @@
     <img src="./files/2-cf_buildpacks.png" >
    </br>
    </br>
+   
 3. Cloning Git hub repositiory link to local directory
    </br>
    </br>
@@ -61,6 +62,7 @@
     <img src="./files/3-gi_clone.png" >
    </br>
    </br>
+   
 4. Deploying app to cloud
    </br>
    </br>
@@ -73,6 +75,7 @@
     <img src="./files/4-cf_push.png" >
    </br>
    </br>  
+   
 5. Checking list of available apps in cloud (deployed)
    </br>
    </br>
@@ -85,6 +88,7 @@
     <img src="./files/5-cf_apps.png" >
    </br>
    </br>
+   
 6. Checking log status for a specific app
    </br>
    </br>
@@ -97,6 +101,7 @@
     <img src="./files/6-cf_logs.png" >
    </br>
    </br>
+   
 7. Increasing RAM memory allocation for app
    </br>
    </br>
@@ -109,6 +114,7 @@
     <img src="./files/7-cf_scale.png" >
    </br>
    </br>
+   
 8. Delete app
    </br>
    </br>
