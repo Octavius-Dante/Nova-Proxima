@@ -14,6 +14,7 @@ Maven is essential for managing the project with needed artifcats
 - [X] Spring Tools Suite (STS) https://spring.io/tools
 
 </br>
+
 **Maven download**
 
    </br>
