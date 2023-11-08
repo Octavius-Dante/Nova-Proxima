@@ -76,3 +76,29 @@ Maven is essential for managing the project with needed artifcats
     <img src="./files/sts_error_fix.jpg" >
    </br>
    </br>
+
+
+# Creating a spring starter project
+
+- Step 1
+   </br>
+   </br>
+    <img src="./files/sts_starter.png" >
+   </br>
+   </br>
+   </br>
+- step 2
+   </br>
+   </br>
+    <img src="./files/sts_starter_2.png" >
+   </br>
+   </br>
+   </br>
+- step 3
+   </br>
+   </br>
+    <img src="./files/sts_starter_3.png" >
+   </br>
+   </br>
+   </br>
+  
