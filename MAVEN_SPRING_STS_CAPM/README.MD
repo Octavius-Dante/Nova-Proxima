@@ -15,7 +15,7 @@ Maven is essential for managing the project with needed artifcats
 </br>
 
 
-**Installation of MAVEN to system**
+**Installation of Spring tools suite to system**
 
 - [X] Prerequisite java installation version 17 or greater needed for Spring tool suite as on Q4-2023 
 - [X] Spring Tools Suite (STS) https://spring.io/tools
