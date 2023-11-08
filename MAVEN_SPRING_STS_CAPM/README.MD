@@ -34,7 +34,10 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    
-Post Spring STS installationm, increasing the RAM allocation in *.ini file in STS directory
+Post Spring STS extraction, increase the RAM allocation fpr STS by making changes to *.ini file in STS directory
+
+- change the values as mentioned in screenshot initiall it will be 512m or 256m , change it to 1G and 6G accordingly MB to GB allcoation of ram for this spring software.
+
    </br>
    </br>
     <img src="./files/3-sts.png" >
