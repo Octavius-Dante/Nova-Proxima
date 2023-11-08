@@ -107,7 +107,7 @@ Maven is essential for managing the project with needed artifcats
 </br>
 
 > [!NOTE]   
-> What is POM file ?  >Project Object Model is a file which is required by maven to manage all dependencies required for the project.
+   > What is POM file ?  >Project Object Model is a file which is required by maven to manage all dependencies required for the project.
    
    </br>
    </br>
@@ -118,7 +118,7 @@ Maven is essential for managing the project with needed artifcats
 
 - Step 5 - After creating POM file if there is any error in the file in the mentioned location, it can be fixed.
 
-*Problem :*
+   *Problem :*
    </br>
    </br>
     <img src="./files/xml_error.png" >
@@ -126,7 +126,7 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
 
-*Solution :*
+   *Solution :*
    </br>
    </br>
     <img src="./files/sts_error_fix_2.jpg" >
