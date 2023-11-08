@@ -129,7 +129,7 @@ after creating POM file if there is any error in the file in the mentioned locat
 *Solution :*
    </br>
    </br>
-    <img src="./files/sts_error_fix_2.png" >
+    <img src="./files/sts_error_fix_2.jpg" >
    </br>
    </br>
    </br>
