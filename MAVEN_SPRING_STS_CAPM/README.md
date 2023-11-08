@@ -87,14 +87,14 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    </br>
-- step 2
+- Step 2
    </br>
    </br>
     <img src="./files/sts_starter_2.png" >
    </br>
    </br>
    </br>
-- step 3
+- Step 3
    </br>
    </br>
     <img src="./files/sts_starter_3.png" >
