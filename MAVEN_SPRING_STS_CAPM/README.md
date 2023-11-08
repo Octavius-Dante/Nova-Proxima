@@ -43,7 +43,9 @@ Post Spring STS extraction, increase the RAM allocation fpr STS by making change
     <img src="./files/3-sts.png" >
    </br>
    </br>
-
+   </br>
+   </br>
+   
 # Starting spring tool suite : Troubleshooting issues
 
 </br>
