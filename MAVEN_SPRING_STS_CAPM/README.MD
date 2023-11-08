@@ -13,8 +13,8 @@ Maven is essential for managing the project with needed artifcats
 - [X] Prerequisite java installation version 17 or greater needed for Spring tool suite as on Q4-2023 
 - [X] Spring Tools Suite (STS) https://spring.io/tools
 
-
-**Maven Download**
+</br>
+**Maven download**
 
    </br>
    </br>
@@ -22,7 +22,7 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    
-Spring Tools suite for windows 
+**Spring Tools suite for windows download**
 
    </br>
    </br>
@@ -30,7 +30,7 @@ Spring Tools suite for windows
    </br>
    </br>
    
-Post Spring STS installation on increasing the RAM allcoation in *.ini file in STS directory
+Post Spring STS installationm, increasing the RAM allocation in *.ini file in STS directory
 
    </br>
    </br>
