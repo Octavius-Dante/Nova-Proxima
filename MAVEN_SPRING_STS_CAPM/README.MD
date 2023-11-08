@@ -15,7 +15,6 @@ Maven is essential for managing the project with needed artifcats
 
 </br>
 **Screen Snips for MAVEN and Spring tools suite**
-</br>
 
 Maven 
 
