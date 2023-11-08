@@ -53,14 +53,7 @@ Maven is essential for managing the project with needed artifcats
    <img src="./files/maven_path.png" >
    </br>
    </br>
-   </br>
-   </br>
-
-   </br>
-   </br>
    <img src="./files/env_variables.png" >
-   </br>
-   </br>
    </br>
    </br>
 
