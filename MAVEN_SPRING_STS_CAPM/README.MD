@@ -1,4 +1,4 @@
-## MAVEN Starter guide
+## MAVEN & Spring tool suite - Starter guide
 
 </br>
 </br>
