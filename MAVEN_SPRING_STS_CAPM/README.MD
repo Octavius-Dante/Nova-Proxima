@@ -43,6 +43,6 @@ Post Spring STS installationm, increasing the RAM allocation in *.ini file in ST
 
 **Starting spring tool suite possibilities of following errors**
 
-- LSP (Spring boot language server) error when you launch and STS.
+- LSP (Spring boot language server) error when you launch Spring STS.
 
 
