@@ -80,21 +80,21 @@ Maven is essential for managing the project with needed artifcats
 
 # Creating a spring starter project
 
-- Step 1
+- Step 1 - select the starter project 
    </br>
    </br>
     <img src="./files/sts_starter.png" >
    </br>
    </br>
    </br>
-- Step 2
+- Step 2 - Fill all necessary data
    </br>
    </br>
     <img src="./files/sts_starter_2.png" >
    </br>
    </br>
    </br>
-- Step 3
+- Step 3 - Click finish
    </br>
    </br>
     <img src="./files/sts_starter_3.png" >
