@@ -51,3 +51,20 @@ Post Spring STS extraction, increase the RAM allocation fpr STS by making change
 </br>
 
 - [x] **LSP (Spring boot language server) error when you launch Spring STS.**
+
+*Problem :
+
+   </br>
+   </br>
+    <img src="./files/sts_error_1.jpg" >
+   </br>
+   </br>
+   </br>
+      
+*Solution :   
+   
+   </br>
+   </br>
+    <img src="./files/sts_error_fix.jpg" >
+   </br>
+   </br>
