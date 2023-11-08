@@ -16,7 +16,6 @@ Maven is essential for managing the project with needed artifcats
 </br>
 
 **Maven download**
-
    </br>
    </br>
     <img src="./files/1-maven.png" >
@@ -24,7 +23,6 @@ Maven is essential for managing the project with needed artifcats
    </br>
    
 **Spring Tools suite for windows download**
-
    </br>
    </br>
     <img src="./files/2-sts.png" >
@@ -32,7 +30,6 @@ Maven is essential for managing the project with needed artifcats
    </br>
    
 Post Spring STS installationm, increasing the RAM allocation in *.ini file in STS directory
-
    </br>
    </br>
     <img src="./files/3-sts.png" >
