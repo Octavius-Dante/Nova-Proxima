@@ -116,7 +116,7 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
 
-after creating POM file if there is any error in the file in the mentioned location, it can be fixed.
+- Step 5 - After creating POM file if there is any error in the file in the mentioned location, it can be fixed.
 
 *Problem :*
    </br>
