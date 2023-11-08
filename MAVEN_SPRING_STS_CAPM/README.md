@@ -103,6 +103,8 @@ Maven is essential for managing the project with needed artifcats
    </br>
   
 - Step 4 - files will be generated - select pom file
+-- what is POM file ?
+--- ans
    </br>
    </br>
     <img src="./files/pom.png" >
