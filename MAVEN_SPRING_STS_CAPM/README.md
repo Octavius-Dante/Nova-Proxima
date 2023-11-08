@@ -27,7 +27,7 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    
-**Spring Tools suite for windows download**
+**Spring Tools suite for windows download - this is a modified verion of eclipse IDE**
    </br>
    </br>
     <img src="./files/2-sts.png" >
