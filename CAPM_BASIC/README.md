@@ -1,7 +1,5 @@
 ## [CAPM] Cloud application programming model
 
-</br>
-
 ### Starter guide for CAPM Basic commands 
 
 </br>
