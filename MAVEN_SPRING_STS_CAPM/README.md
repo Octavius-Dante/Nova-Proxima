@@ -20,21 +20,21 @@ Maven is essential for managing the project with needed artifcats
 
 </br>
 
-**Maven download**
+**(1) Maven download**
    </br>
    </br>
     <img src="./files/1-maven.png" >
    </br>
    </br>
    
-**Spring Tools suite for windows download - this is a modified verion of eclipse IDE**
+**(2) Spring Tools suite for windows download - this is a modified verion of eclipse IDE**
    </br>
    </br>
     <img src="./files/2-sts.png" >
    </br>
    </br>
    
-Post Spring STS extraction, increase the RAM allocation fpr STS by making changes to *.ini file in STS directory
+(3) Post Spring STS extraction, increase the RAM allocation fpr STS by making changes to *.ini file in STS directory
 
 - Change the values as mentioned in screenshot initiall it will be 512m or 256m , change it to 1G and 6G accordingly MB to GB allocation of RAM for this spring software.
 
