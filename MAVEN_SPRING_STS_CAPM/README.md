@@ -46,7 +46,7 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
 
-**(4) Extract Maven apache server file to a directory and set environmetn varialbes**
+**(4) Extract Maven apache server file to a directory and set environment varialbes**
 
    </br>
    </br>
