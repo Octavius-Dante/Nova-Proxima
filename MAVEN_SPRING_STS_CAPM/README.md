@@ -45,6 +45,25 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    </br>
+
+**(4) Extract Maven apache server file to a directory and set environmetn varialbes**
+
+   </br>
+   </br>
+   <img src="./files/maven_path.png" >
+   </br>
+   </br>
+   </br>
+   </br>
+
+   </br>
+   </br>
+   <img src="./files/env_variables.png" >
+   </br>
+   </br>
+   </br>
+   </br>
+
    
 # Starting spring tool suite : Troubleshooting issues
 
