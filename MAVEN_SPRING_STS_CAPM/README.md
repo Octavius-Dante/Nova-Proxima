@@ -62,7 +62,7 @@ Post Spring STS extraction, increase the RAM allocation fpr STS by making change
    </br>
    </br>
       
-*Solution :*   
+*Solution : Change the active provider from (Native) to (Direct)*
    </br>
     <img src="./files/sts_error_fix.jpg" >
    </br>
