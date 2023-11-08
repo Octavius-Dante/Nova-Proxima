@@ -12,8 +12,6 @@ Maven is essential for managing the project with needed artifcats
 - [X] Download the MAVEN file (extract in the needed Directory) https://maven.apache.org/download.cgi
 
 </br>
-</br>
-
 
 **Installation of Spring tools suite to system**
 
