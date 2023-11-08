@@ -51,4 +51,4 @@ Post Spring STS extraction, increase the RAM allocation fpr STS by making change
    </br>
    </br>
 
-*Starting spring tool suite possibilities of following errors*
+**Starting spring tool suite : Troubleshooting issues**
