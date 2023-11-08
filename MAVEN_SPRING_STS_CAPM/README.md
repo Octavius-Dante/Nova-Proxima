@@ -115,3 +115,21 @@ Maven is essential for managing the project with needed artifcats
    </br>
    </br>
    </br>
+
+after creating POM file if there is any error in the file in the mentioned location, it can be fixed.
+
+*Problem :*
+   </br>
+   </br>
+    <img src="./files/xml_error.png" >
+   </br>
+   </br>
+   </br>
+
+*Solution :*
+   </br>
+   </br>
+    <img src="./files/sts_error_fix_2" >
+   </br>
+   </br>
+   </br>
