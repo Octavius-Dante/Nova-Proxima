@@ -10,7 +10,7 @@ define view ZCDS_CONTR_LINE_3 as select from ZCDS_CONTR_LINE_2
 //   key CONTRIB_IRN,
 //   key CONTRIB_SEQ_NO,
 //   TRANS_TYPE,
-  sum(CONTRIB_AMT_2) as calculation_amt
+  sum (CONTRIB_AMT_2) as calculation_amt
 
 } where FUND = 'TF054001' 
 group by BUKRS , FUND
