@@ -169,7 +169,7 @@ FORM process USING pv_table TYPE tabname16.
 
   IF sy-subrc EQ 0.
 
-    SELECT tabname, fieldname, position FROM dd03l
+        SELECT tabname, fieldname, position, datatype, leng FROM dd03l
     INTO TABLE @DATA(lt_dd03l) WHERE tabname EQ @pv_table.
 
     SORT lt_dd03l BY position ASCENDING. "Field order in the table
