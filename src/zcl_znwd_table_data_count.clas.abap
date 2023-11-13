@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_znwd_table_data_count IMPLEMENTATION.
+CLASS ZCL_ZNWD_TABLE_DATA_COUNT IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     SELECT  * FROM znwd_ad INTO TABLE @DATA(lt_znwd_ad).

@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_t_table_fill IMPLEMENTATION.
+CLASS ZCL_T_TABLE_FILL IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -2046,5 +2047,4 @@ TEMP_UNIT = '' FAMUNIT = '' PRESS_VAL = '0' PRESS_UNIT = '' )
 ************************************************************************
 
   ENDMETHOD.
-
 ENDCLASS.

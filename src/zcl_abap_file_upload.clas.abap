@@ -26,6 +26,7 @@ ENDCLASS.
 
 CLASS ZCL_ABAP_FILE_UPLOAD IMPLEMENTATION.
 
+
  METHOD if_http_service_extension~handle_request.
 
 **********************************************************************
@@ -154,6 +155,7 @@ CLASS ZCL_ABAP_FILE_UPLOAD IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD get_input_field_value.
 
     FIELD-SYMBOLS: <value> TYPE data,
@@ -166,6 +168,7 @@ CLASS ZCL_ABAP_FILE_UPLOAD IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
+
 
   METHOD get_html.
     ui_html =
@@ -291,5 +294,4 @@ CLASS ZCL_ABAP_FILE_UPLOAD IMPLEMENTATION.
      | \n| &&
      |</html> |.
   ENDMETHOD.
-
 ENDCLASS.
