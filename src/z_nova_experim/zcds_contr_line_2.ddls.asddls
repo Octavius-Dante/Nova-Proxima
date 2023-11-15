@@ -12,7 +12,8 @@ define view ZCDS_CONTR_LINE_2 as select from ZCDS_CONTR_LINE
    TRANS_TYPE,
    
    case TRANS_TYPE
-   when 'A' then CONTRIB_AMT * -1
+   when 'C' then CONTRIB_AMT * -1
+   when 'D' then CONTRIB_AMT * -1
    else CONTRIB_AMT
    end as CONTRIB_AMT_2,  
    
