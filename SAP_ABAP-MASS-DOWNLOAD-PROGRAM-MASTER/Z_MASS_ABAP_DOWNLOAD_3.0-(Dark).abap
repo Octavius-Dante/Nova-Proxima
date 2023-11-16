@@ -8681,7 +8681,10 @@ FORM addtablestyles USING ilocheader LIKE dumihtml[]
   APPEND `  }` TO ilocheader.
 * new inclusion - start
 *  APPEND `  .cell td { border: thin solid #ccc; }` TO ilocheader.
-  APPEND `  .cell td { border: thin solid #808080; }` TO ilocheader.
+*  APPEND `  .cell td { border: thin solid #808080; }` TO ilocheader.
+
+  APPEND `  .cell td { border: thin solid #29313A; }` TO ilocheader.
+
 * new inclusion - end
   APPEND `</style>` TO ilocheader.
 
