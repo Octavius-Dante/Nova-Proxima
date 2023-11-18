@@ -156,9 +156,6 @@ FORM process USING pv_table TYPE tabname16.
   INTO TABLE <ft_table>.
 
   IF sy-subrc EQ 0.
-* RECORD INSERT BLOCK STATEMENT CLOSE
-    ls_text-text =  |).|.
-    APPEND ls_text TO lt_text.
 
     lv_filename = pv_table.
 
