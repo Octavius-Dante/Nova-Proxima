@@ -8822,8 +8822,8 @@ FORM addcodestyles USING ilocheader LIKE dumihtml[]
 
   APPEND `  .code{ font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
 *  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
-  APPEND `  a:link { color:#50FA7B; }  a:visited { color:#50FA7B; } a:hover { color:orange; }  a:active { color:yellow; }  ` TO ilocheader.
-  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#60B1D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+  APPEND `  a:link{ color:#50FA7B; }  a:visited { color:#50FA7B; } a:hover { color:orange; }  a:active { color:yellow; }  ` TO ilocheader.
+  APPEND `  .codeComment{ font-family:"Courier New", Courier, monospace; color:#60B1D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
   APPEND `  .normalBold{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:12px; font-weight:800 }` TO ilocheader.
   APPEND `  .normalBoldLarge{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:16px; font-weight:800 }` TO ilocheader.
 
@@ -8897,7 +8897,9 @@ FORM addgenericstyles USING ilocheader LIKE dumihtml[]
 
 * Code - Table definition
   APPEND `  .code{ font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
-  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+*  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+  APPEND `  a:link{ color:#50FA7B; }  a:visited { color:#50FA7B; } a:hover { color:orange; }  a:active { color:yellow; }  ` TO ilocheader.
+  APPEND `  .codeComment{ font-family:"Courier New", Courier, monospace; color:#60B1D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
   APPEND `  .normalBold{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:12px; font-weight:800 }` TO ilocheader.
   APPEND `  .normalBoldLarge{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:16px; font-weight:800 }` TO ilocheader.
 
