@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZLAND1</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>03</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>12</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Country/Region Key</DDTEXT>
+    <REPTEXT>C/R</REPTEXT>
+    <SCRTEXT_S>Ctry/Reg.</SCRTEXT_S>
+    <SCRTEXT_M>Ctry/Reg.</SCRTEXT_M>
+    <SCRTEXT_L>Country/Region Key</SCRTEXT_L>
+    <APPLCLASS>FB</APPLCLASS>
+    <DTELMASTER>D</DTELMASTER>
+    <DEFFDNAME>COUNTRY</DEFFDNAME>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000003</LENG>
+    <OUTPUTLEN>000003</OUTPUTLEN>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>2</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>4</LANGU>
+    <LANGU>5</LANGU>
+    <LANGU>6</LANGU>
+    <LANGU>7</LANGU>
+    <LANGU>8</LANGU>
+    <LANGU>A</LANGU>
+    <LANGU>B</LANGU>
+    <LANGU>C</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>G</LANGU>
+    <LANGU>H</LANGU>
+    <LANGU>I</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>L</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>O</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>Q</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+    <LANGU>T</LANGU>
+    <LANGU>U</LANGU>
+    <LANGU>V</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>d</LANGU>
+    <LANGU>뱋</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>国家/地区代码</DDTEXT>
+     <REPTEXT>C/R</REPTEXT>
+     <SCRTEXT_S>国家/地区</SCRTEXT_S>
+     <SCRTEXT_M>国家/地区</SCRTEXT_M>
+     <SCRTEXT_L>国家/地区代码</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>2</DDLANGUAGE>
+     <DDTEXT>คีย์ประเทศ/ภูมิภาค</DDTEXT>
+     <REPTEXT>C/R</REPTEXT>
+     <SCRTEXT_S>Ctry/Reg.</SCRTEXT_S>
+     <SCRTEXT_M>Ctry/Reg.</SCRTEXT_M>
+     <SCRTEXT_L>คีย์ประเทศ/ภูมิภาค</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>국가/지역 키</DDTEXT>
+     <REPTEXT>C/R</REPTEXT>
+     <SCRTEXT_S>국가/지역</SCRTEXT_S>
+     <SCRTEXT_M>국가/지역</SCRTEXT_M>
+     <SCRTEXT_L>국가/지역 키</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>4</DDLANGUAGE>
+     <DDTEXT>Cheie ţară/regiune</DDTEXT>
+     <REPTEXT>Ţ/R</REPTEXT>
+     <SCRTEXT_S>Ţară/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Ţară/regiune</SCRTEXT_M>
+     <SCRTEXT_L>Cheie ţară/regiune</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>5</DDLANGUAGE>
+     <DDTEXT>Ključ države/regije</DDTEXT>
+     <REPTEXT>D/R</REPTEXT>
+     <SCRTEXT_S>Drž./reg.</SCRTEXT_S>
+     <SCRTEXT_M>Drž./reg.</SCRTEXT_M>
+     <SCRTEXT_L>Ključ države/regije</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>6</DDLANGUAGE>
+     <DDTEXT>Ključ države/regije</DDTEXT>
+     <REPTEXT>D/R</REPTEXT>
+     <SCRTEXT_S>Drž/regija</SCRTEXT_S>
+     <SCRTEXT_M>Država/reg.</SCRTEXT_M>
+     <SCRTEXT_L>Ključ države/regije</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>7</DDLANGUAGE>
+     <DDTEXT>Kod Negara/Wilayah</DDTEXT>
+     <REPTEXT>N/W</REPTEXT>
+     <SCRTEXT_S>Neg/Wilayh</SCRTEXT_S>
+     <SCRTEXT_M>Neg/Wilayh</SCRTEXT_M>
+     <SCRTEXT_L>Kod Negara/Wilayah</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>8</DDLANGUAGE>
+     <DDTEXT>Код країни/регіону</DDTEXT>
+     <REPTEXT>К/Р</REPTEXT>
+     <SCRTEXT_S>Кр./регіон</SCRTEXT_S>
+     <SCRTEXT_M>Кр./регіон</SCRTEXT_M>
+     <SCRTEXT_L>Код країни/регіону</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>A</DDLANGUAGE>
+     <DDTEXT>مفتاح الدولة/المنطقة</DDTEXT>
+     <REPTEXT>بلد</REPTEXT>
+     <SCRTEXT_S>الدولة</SCRTEXT_S>
+     <SCRTEXT_M>الدولة</SCRTEXT_M>
+     <SCRTEXT_L>مفتاح الدولة/المنطقة</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>B</DDLANGUAGE>
+     <DDTEXT>מפתח אזור/מדינה</DDTEXT>
+     <REPTEXT>מ.א</REPTEXT>
+     <SCRTEXT_S>מדינה/אזור</SCRTEXT_S>
+     <SCRTEXT_M>מדינה/אזור</SCRTEXT_M>
+     <SCRTEXT_L>מפתח אזור/מדינה</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>C</DDLANGUAGE>
+     <DDTEXT>Klíč státu/regionu</DDTEXT>
+     <REPTEXT>S/R</REPTEXT>
+     <SCRTEXT_S>Stát/regio</SCRTEXT_S>
+     <SCRTEXT_M>Stát/region</SCRTEXT_M>
+     <SCRTEXT_L>Klíč státu/regionu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Länder-/Regionenschlüssel</DDTEXT>
+     <REPTEXT>L/R</REPTEXT>
+     <SCRTEXT_S>Land/Reg.</SCRTEXT_S>
+     <SCRTEXT_M>Land/Region</SCRTEXT_M>
+     <SCRTEXT_L>Länder-/RegSchlüssel</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Clé de pays/région</DDTEXT>
+     <REPTEXT>P/R</REPTEXT>
+     <SCRTEXT_S>Pays/Rég.</SCRTEXT_S>
+     <SCRTEXT_M>Pays/Région</SCRTEXT_M>
+     <SCRTEXT_L>Clé de pays/région</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>G</DDLANGUAGE>
+     <DDTEXT>Κλειδί Χώρας/Περιοχής</DDTEXT>
+     <REPTEXT>Χ/Π</REPTEXT>
+     <SCRTEXT_S>Χώρα/Περ.</SCRTEXT_S>
+     <SCRTEXT_M>Χώρα/Περ.</SCRTEXT_M>
+     <SCRTEXT_L>Κλειδί Χώρας/Περιοχ.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>H</DDLANGUAGE>
+     <DDTEXT>Ország-/régiókulcs</DDTEXT>
+     <REPTEXT>O/R</REPTEXT>
+     <SCRTEXT_S>Orsz./rég.</SCRTEXT_S>
+     <SCRTEXT_M>Ország/régió</SCRTEXT_M>
+     <SCRTEXT_L>Ország-/régiókulcs</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>I</DDLANGUAGE>
+     <DDTEXT>Chiave paese/regione</DDTEXT>
+     <REPTEXT>P/R</REPTEXT>
+     <SCRTEXT_S>Paese/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Paese/Reg</SCRTEXT_M>
+     <SCRTEXT_L>Chiave paese/regione</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>国/地域キー</DDTEXT>
+     <REPTEXT>C/R</REPTEXT>
+     <SCRTEXT_S>国/地域</SCRTEXT_S>
+     <SCRTEXT_M>国/地域</SCRTEXT_M>
+     <SCRTEXT_L>国/地域キー</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Lande-/regionsnøgle</DDTEXT>
+     <REPTEXT>L/R</REPTEXT>
+     <SCRTEXT_S>Land/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Land/region</SCRTEXT_M>
+     <SCRTEXT_L>Nøgle f. land/region</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>L</DDLANGUAGE>
+     <DDTEXT>Klucz kraju/regionu</DDTEXT>
+     <REPTEXT>K/R</REPTEXT>
+     <SCRTEXT_S>Kraj/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Kraj/region</SCRTEXT_M>
+     <SCRTEXT_L>Klucz kraju/regionu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>國家/地區碼</DDTEXT>
+     <REPTEXT>C/R</REPTEXT>
+     <SCRTEXT_S>國家/地區</SCRTEXT_S>
+     <SCRTEXT_M>國家/地區</SCRTEXT_M>
+     <SCRTEXT_L>國家/地區碼</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Land-/regiocode</DDTEXT>
+     <REPTEXT>L/R</REPTEXT>
+     <SCRTEXT_S>Land/regio</SCRTEXT_S>
+     <SCRTEXT_M>Land/regio</SCRTEXT_M>
+     <SCRTEXT_L>Land-/regiocode</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>O</DDLANGUAGE>
+     <DDTEXT>Land-/regionskode</DDTEXT>
+     <REPTEXT>L/r</REPTEXT>
+     <SCRTEXT_S>Land/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Land/region</SCRTEXT_M>
+     <SCRTEXT_L>Land-/regionskode</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Chave do país/da região</DDTEXT>
+     <REPTEXT>P/R</REPTEXT>
+     <SCRTEXT_S>País/reg.</SCRTEXT_S>
+     <SCRTEXT_M>País/região</SCRTEXT_M>
+     <SCRTEXT_L>Chave de país/região</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Q</DDLANGUAGE>
+     <DDTEXT>Kľúč štátu/regiónu</DDTEXT>
+     <REPTEXT>Š/R</REPTEXT>
+     <SCRTEXT_S>Štát/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Štát/región</SCRTEXT_M>
+     <SCRTEXT_L>Kľúč štátu/regiónu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Код страны/региона</DDTEXT>
+     <REPTEXT>С/Р</REPTEXT>
+     <SCRTEXT_S>Стр./рег.</SCRTEXT_S>
+     <SCRTEXT_M>Стр./рег.</SCRTEXT_M>
+     <SCRTEXT_L>Код страны/региона</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Clave de país/región</DDTEXT>
+     <REPTEXT>P/R</REPTEXT>
+     <SCRTEXT_S>País/Reg.</SCRTEXT_S>
+     <SCRTEXT_M>País/Región</SCRTEXT_M>
+     <SCRTEXT_L>Clave de país/región</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DDTEXT>Ülke/bölge anahtarı</DDTEXT>
+     <REPTEXT>Ü/B</REPTEXT>
+     <SCRTEXT_S>Ülke/bölge</SCRTEXT_S>
+     <SCRTEXT_M>Ülke/bölge</SCRTEXT_M>
+     <SCRTEXT_L>Ülke/bölge anahtarı</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>U</DDLANGUAGE>
+     <DDTEXT>Maa-/alueavain</DDTEXT>
+     <REPTEXT>M/A</REPTEXT>
+     <SCRTEXT_S>Maa/alue</SCRTEXT_S>
+     <SCRTEXT_M>Maa/alue</SCRTEXT_M>
+     <SCRTEXT_L>Maa-/alueavain</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>V</DDLANGUAGE>
+     <DDTEXT>Landskod/regionkod</DDTEXT>
+     <REPTEXT>L/R</REPTEXT>
+     <SCRTEXT_S>Land/reg.</SCRTEXT_S>
+     <SCRTEXT_M>Land/region</SCRTEXT_M>
+     <SCRTEXT_L>Landskod/regionkod</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>W</DDLANGUAGE>
+     <DDTEXT>Ключ на държава/регион</DDTEXT>
+     <REPTEXT>Д/Р</REPTEXT>
+     <SCRTEXT_S>Държ/Рег.</SCRTEXT_S>
+     <SCRTEXT_M>Държ/Регион</SCRTEXT_M>
+     <SCRTEXT_L>Ключ държава/регион</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>d</DDLANGUAGE>
+     <DDTEXT>Ključ zemlje/regije</DDTEXT>
+     <REPTEXT>Z/R</REPTEXT>
+     <SCRTEXT_S>Zem./reg.</SCRTEXT_S>
+     <SCRTEXT_M>Zemlja/reg.</SCRTEXT_M>
+     <SCRTEXT_L>Ključ zemlje/regije</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>뱋</DDLANGUAGE>
+     <DDTEXT>Ел/аймақ коды</DDTEXT>
+     <REPTEXT>Е/А</REPTEXT>
+     <SCRTEXT_S>Ел/аймақ</SCRTEXT_S>
+     <SCRTEXT_M>Ел/аймақ</SCRTEXT_M>
+     <SCRTEXT_L>Ел/аймақ коды</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
