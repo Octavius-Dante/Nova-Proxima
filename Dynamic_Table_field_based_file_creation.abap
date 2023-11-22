@@ -5,7 +5,7 @@
 *&---------------------------------------------------------------------*
 REPORT ztable_data_extr_field_sel.
 
-Functionality overview : 
+* Functionality overview : 
 
 * select the fields of the given table name 
 * based on the selected fields data will be selcted from table (dynamic select) 
