@@ -5,13 +5,14 @@
 *&---------------------------------------------------------------------*
 REPORT ztable_schema_and_data_extract.
 
+
 * Functionality overview
 
 * Download Html page layout of table with table details same as (abap mass download)
-* Table definition with annotations 
-* Structure definition with annotations 
+* Table definition with annotations
+* Structure definition with annotations
 
-* Layout of table definition using following types 
+* Layout of table definition using following types
 * Only Data type, Data element with foreign key annotations, Data element alone)
 
 * Download the table data in json file format - to given directory
@@ -210,8 +211,8 @@ SELECTION-SCREEN SKIP.
 SELECTION-SCREEN COMMENT /1(79) value.
 PARAMETERS : json AS CHECKBOX DEFAULT 'X'. " - Json file for Git ABAP uploader cloud
 SELECTION-SCREEN SKIP.
-SELECTION-SCREEN COMMENT /1(79) value_1.
-PARAMETERS : tabd AS CHECKBOX DEFAULT 'X'. " - Tab-delimited text file
+*SELECTION-SCREEN COMMENT /1(79) value_1.
+*PARAMETERS : tabd AS CHECKBOX DEFAULT 'X'. " - Tab-delimited text file
 
 SELECTION-SCREEN COMMENT /10(79) value_2.
 SELECTION-SCREEN: END OF BLOCK b2.
@@ -221,8 +222,8 @@ INITIALIZATION.
   header2 = 'File path and file types'.
   name1   = 'Package Name'.
   name2   = 'Table Name'.
-  value   = 'Json file format download'.
-  value_1 = 'Tab delimited file format download'.
+  value   = 'Json file format table data download Max 50K records'.
+*  value_1 = 'Tab delimited file format download'.
 
 
 AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_pspath.
@@ -324,7 +325,7 @@ START-OF-SELECTION.
   WHERE tabname IN @sotablenames
     AND tabclass EQ 'TRANSP'.
   IF sy-subrc EQ 0.
-*TRANSP	- Transparent table
+*TRANSP  - Transparent table
     DESCRIBE TABLE lt_tables LINES DATA(lv_lines).
   ENDIF.
 
@@ -346,24 +347,26 @@ START-OF-SELECTION.
 
   ENDIF.
 
+*
+*  IF tabd EQ 'X'.
+** Tab-Delimited file download logic
+*    CLEAR : gv_path.
+*    CONCATENATE downloadfolder '\DATA_TABD' INTO gv_path .
+*
+*    IF lt_tables IS NOT INITIAL.
+*      LOOP AT lt_tables INTO wa_tab_names.
+*        IF sy-tabix EQ lv_lines.
+*          gv_flag_all = 'X'.
+*        ENDIF.
+*
+*        PERFORM process_tabd USING wa_tab_names-tabname.
+*        CLEAR : wa_tab_names.
+*      ENDLOOP.
+*    ENDIF.
+*
+*  ENDIF.
 
-  IF tabd EQ 'X'.
-* Tab-Delimited file download logic
-    CLEAR : gv_path.
-    CONCATENATE downloadfolder '\DATA_TABD' INTO gv_path .
-
-    IF lt_tables IS NOT INITIAL.
-      LOOP AT lt_tables INTO wa_tab_names.
-        IF sy-tabix EQ lv_lines.
-          gv_flag_all = 'X'.
-        ENDIF.
-
-        PERFORM process_tabd USING wa_tab_names-tabname.
-        CLEAR : wa_tab_names.
-      ENDLOOP.
-    ENDIF.
-
-  ENDIF.
+  MESSAGE 'All activities completed' TYPE 'I'.
 
 * FUNCTIONALITY COMMENTS ---NEED TO CONSTRUCT---------
 
@@ -1140,7 +1143,7 @@ FORM addcodestyles USING ilocheader LIKE dumihtml[]
 *  APPEND `  .normalBold{ font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; font-weight:800 }` TO ilocheader.
 *  APPEND `  .normalBoldLarge{ font-family:Arial, Helvetica, sans-serif; color:#000; font-size:16px; font-weight:800 }` TO ilocheader.
   APPEND `  .code{ font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
-  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+  APPEND `  .codeComment2 {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
   APPEND `  .normalBold{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:12px; font-weight:800 }` TO ilocheader.
   APPEND `  .normalBoldLarge{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:16px; font-weight:800 }` TO ilocheader.
 * new inclusion - end
@@ -1206,7 +1209,8 @@ FORM addgenericstyles USING ilocheader LIKE dumihtml[]
 
 * Code - Table definition
   APPEND `  .code{ font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
-  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#D3D7D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+  APPEND `  .codeComment{ font-family:"Courier New", Courier, monospace; color:#ADFC03; font-size:14px; background-color:#1C2228 }` TO ilocheader.
+*  APPEND `  .codeComment {font-family:"Courier New", Courier, monospace; color:#60B1D9; font-size:14px; background-color:#1C2228 }` TO ilocheader.
   APPEND `  .normalBold{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:12px; font-weight:800 }` TO ilocheader.
   APPEND `  .normalBoldLarge{ font-family:Arial, Helvetica, sans-serif; color:#D3D7D9; font-size:16px; font-weight:800 }` TO ilocheader.
 
@@ -1520,7 +1524,8 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
   APPEND `       <tr>` TO htmltable.
   APPEND `          <td>` TO htmltable.
 
-  APPEND `   <div class="code">` TO htmltable.
+*  APPEND `   <div class="code">` TO htmltable.
+  APPEND `   <div class="codeComment">` TO htmltable.
   APPEND '<br />' TO htmltable.
 
 * Table / Structure definition block
@@ -1560,6 +1565,12 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
     DATA(lv_tablename) = gv_tablename.
     TRANSLATE lv_tablename TO LOWER CASE.
 
+* insert - 2-start
+    APPEND `</div>` TO htmltable.
+    APPEND `   <div class="code">` TO htmltable.
+    APPEND '<br />' TO htmltable.
+* insert - 2-end
+
     CONCATENATE ` define table ` lv_tablename ` { <br /> ` INTO htmltable.
     APPEND htmltable.
 
@@ -1569,6 +1580,12 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
 
     lv_tablename = gv_tablename.
     TRANSLATE lv_tablename TO LOWER CASE.
+
+* insert - 2-start
+    APPEND `</div>` TO htmltable.
+    APPEND `   <div class="code">` TO htmltable.
+    APPEND '<br />' TO htmltable.
+* insert - 2-end
 
     CONCATENATE ` define structure ` lv_tablename ` { <br /> ` INTO htmltable.
     APPEND htmltable.
@@ -1813,17 +1830,33 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
     IF gv_flag EQ 'DEWFK'.
       IF sy-tabix EQ 1.
         IF wa_tdict_struct-keyflag EQ 'X'.
+* insert - 2-start
+          APPEND `</div>` TO htmltable.
+          APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
 * Key field annotation
           APPEND anno_fkey_chck TO htmltable.
+* insert - 2-start
+          APPEND `</div>` TO htmltable.
+          APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
         ENDIF.
       ELSE.
         IF wa_tdict_struct-fkey EQ 'X'.
 * Line spacing for readability in the output.
           APPEND ' <br /> ' TO htmltable.
+* insert - 2-start
+          APPEND `</div>` TO htmltable.
+          APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
 * Key field type annotation
           APPEND anno_fkey_kty2 TO htmltable.
 * Key field annotation
           APPEND anno_fkey_chck TO htmltable.
+* insert - 2-start
+          APPEND `</div>` TO htmltable.
+          APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
         ENDIF.
       ENDIF.
     ENDIF.
@@ -1841,8 +1874,19 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         APPEND ' <br /> ' TO htmltable.
       ENDIF.
 
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
       CONCATENATE anno_sema_curr `'` wa_tdict_struct-reftable '.' wa_tdict_struct-reffield `'<br />` INTO htmltable.
       APPEND htmltable.
+
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
+
     ENDIF.
 
     IF wa_tdict_struct-datatype EQ 'QUAN' OR wa_tdict_struct-datatype EQ 'quan'.
@@ -1854,9 +1898,19 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         APPEND ' <br /> ' TO htmltable.
       ENDIF.
 
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
       CONCATENATE anno_sema_quan `'` wa_tdict_struct-reftable '.' wa_tdict_struct-reffield `'<br />` INTO htmltable.
       APPEND htmltable.
     ENDIF.
+
+* insert - 2-start
+    APPEND `</div>` TO htmltable.
+    APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
 
     IF wa_tdict_struct-datatype EQ 'lang' OR wa_tdict_struct-datatype EQ 'LANG'.
 * Line space after field definition flag
@@ -1867,7 +1921,18 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         APPEND ' <br /> ' TO htmltable.
       ENDIF.
 
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
       APPEND anno_sema_lang TO htmltable.
+
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
+
     ENDIF.
 
     DATA(lv_fieldname) = wa_tdict_struct-fieldname.
@@ -1887,9 +1952,21 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         wa_tdict_struct-ddtext = wa_tdict_struct-fieldname.
       ENDIF.
 
+*      CONCATENATE anno_eusr_labl `&nbsp;'` wa_tdict_struct-ddtext `'<br />` INTO htmltable.
+
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
       CONCATENATE anno_eusr_labl `&nbsp;'` wa_tdict_struct-ddtext `'<br />` INTO htmltable.
       APPEND htmltable.
       CLEAR htmltable.
+
+* insert - 2-start
+      APPEND `</div>` TO htmltable.
+      APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
 
       IF wa_tdict_struct-keyflag EQ 'X'.
 
@@ -1978,10 +2055,23 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         APPEND '<br />' TO htmltable.
         CLEAR htmltable.
 
+*        CONCATENATE anno_eusr_labl `&nbsp;'` wa_tdict_struct-ddtext `'<br />` INTO htmltable.
+
+* insert - 2-start
+        APPEND `</div>` TO htmltable.
+        APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
         CONCATENATE anno_eusr_labl `&nbsp;'` wa_tdict_struct-ddtext `'<br />` INTO htmltable.
+
         DATA(gv_line_ddt) = 'X'.
         APPEND htmltable.
         CLEAR htmltable.
+
+* insert - 2-start
+        APPEND `</div>` TO htmltable.
+        APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
 
         IF wa_tdict_struct-keyflag EQ 'X'.
 
@@ -2054,10 +2144,21 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
         APPEND '<br />' TO htmltable.
         CLEAR htmltable.
 
+* insert - 2-start
+        APPEND `</div>` TO htmltable.
+        APPEND `   <div class="codeComment">` TO htmltable.
+* insert - 2-end
+
         CONCATENATE anno_eusr_labl `&nbsp;'` wa_tdict_struct-ddtext `'<br />` INTO htmltable.
+
         gv_line_ddt = 'X'.
         APPEND htmltable.
         CLEAR htmltable.
+
+* insert - 2-start
+        APPEND `</div>` TO htmltable.
+        APPEND `   <div class="code">` TO htmltable.
+* insert - 2-end
 
         IF wa_tdict_struct-keyflag EQ 'X'.
 
@@ -2148,7 +2249,8 @@ FORM process_json  USING pv_table TYPE tabname.
 
   SELECT *
   FROM (pv_table)
-  INTO TABLE <ft_table>.
+*  INTO TABLE <ft_table>.
+  INTO TABLE <ft_table> UP TO 50000 ROWS.
 
   IF sy-subrc EQ 0.
 
@@ -2185,10 +2287,10 @@ FORM process_json  USING pv_table TYPE tabname.
 * or json file wont work during data load in abap cloud BTP class
 
 *** IF Table field is a text type containing Double quotes "
-*        IF ls_fld-datatype EQ 'CHAR'
-*          AND ls_fld-leng GT 10.
-*          REPLACE ALL OCCURRENCES OF '"' IN <fld_value> WITH 'change text'.
-*        ENDIF.
+        IF ls_fld-datatype EQ 'CHAR'
+          AND ls_fld-leng GT 10.
+          REPLACE ALL OCCURRENCES OF '"' IN <fld_value> WITH 'change text'.
+        ENDIF.
 
 * implement your suitable replacement text for double quotes
 * ############################################################################
@@ -2281,9 +2383,9 @@ FORM process_json  USING pv_table TYPE tabname.
     ENDIF.
   ENDIF.
 
-  IF gv_flag_all EQ abap_true.
-    MESSAGE 'All Json file activities completed' TYPE 'I'.
-  ENDIF.
+*  IF gv_flag_all EQ abap_true.
+*    MESSAGE 'All Json file activities completed' TYPE 'I'.
+*  ENDIF.
 
 ENDFORM.
 *&---------------------------------------------------------------------*
@@ -2307,7 +2409,8 @@ FORM process_tabd USING pv_table TYPE tabname.
 
   SELECT *
   FROM (pv_table)
-  INTO TABLE <ft_table>.
+*  INTO TABLE <ft_table>.
+  INTO TABLE <ft_table> UP TO 50000 ROWS.
 
   IF sy-subrc EQ 0.
 
@@ -2351,8 +2454,8 @@ FORM process_tabd USING pv_table TYPE tabname.
     ENDIF.
   ENDIF.
 
-  IF gv_flag_all EQ abap_true.
-    MESSAGE 'All Tab delimited file activities completed' TYPE 'I'.
-  ENDIF.
+*  IF gv_flag_all EQ abap_true.
+*    MESSAGE 'All Tab delimited file activities completed' TYPE 'I'.
+*  ENDIF.
 
 ENDFORM.
