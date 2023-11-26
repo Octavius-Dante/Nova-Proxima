@@ -4,22 +4,38 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Demo CDS for ZTRST_CONTR_LINE - aggr final'
 define view ZCDS_CONTR_LINE_4
-  as select from ZCDS_CONTR_LINE
+  as select from ztrst_contr_line as _contrline
+association [1..1] to  ZCDS_CUSTOMER_CONTR as _customer on _customer.fund = _contrline.fund
 {
-  key BUKRS,
-  key FUND,
-  key CONTRIB_IRN,
-
+//  key BUKRS,
+//  key fund,
+//  key contrib_irn,
+       _customer.cust_num,
+   _customer.customer_name,
       sum (
-         case TRANS_TYPE
-         when 'C' then CONTRIB_AMT * -1
-         when 'D' then CONTRIB_AMT * -1
-         else CONTRIB_AMT
+         case trans_type
+         when 'C' then contrib_amt * -1
+         when 'D' then contrib_amt * -1
+         else contrib_amt
          end
-         ) as calculation_amt
+         ) as contrib_amt
 
 }
+
+where ( ( _contrline.trans_type = 'N' or
+          _contrline.trans_type = 'A' or
+          _contrline.trans_type = 'C' )
+        and
+        ( _contrline.fund = 'TF050576' or
+          _contrline.fund = 'TF072827' or
+          _contrline.fund = 'TF072841' or
+          _contrline.fund = 'TF072858' or
+          _contrline.fund = 'TF072859'  )
+        )
+
 group by
-  BUKRS,
-  FUND,
-  CONTRIB_IRN
+//  bukrs,
+//  fund,
+//  contrib_irn
+         _customer.cust_num,
+         _customer.customer_name;
