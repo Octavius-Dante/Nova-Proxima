@@ -11,6 +11,8 @@
     dataClass: #MIXED
 }
 
+// THIS DID NOT WORK AS EXPECTED - 
+
 define view ZCDS_TOTAL_SUMMARY
   as select from ZCDS_TOP5_CONTR
 {
