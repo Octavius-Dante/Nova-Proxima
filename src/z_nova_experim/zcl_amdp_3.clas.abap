@@ -23,16 +23,13 @@ CLASS zcl_amdp_3 IMPLEMENTATION.
 * CLIENT needs to be presented in every TABLE function mandt is mandatory in return parameter
 * so selection table (cds) should have MANDT or we should fill it separately
 
-*    RETURN  select TOP 5 distinct
-*            mandt, cust_num, customer_name, contrib_amt
-*            from zcds_contr_line_4 order by contrib_amt desc;
-* Part 1
+** Part 1
     ITAB_1 = SELECT client, cust_num, customer_name, Contrib_amt
              FROM ZCDS_SUMMARY_A ORDER BY CUST_NUM;
-* Part 2
+** Part 2
     ITAB_2 = SELECT client, cust_num, customer_name, contrib_amt
              FROM ZCDS_SUMMARY_B ORDER BY CUST_NUM;
-* Part 3
+** Part 3
     ITAB_3 = SELECT client, cust_num, customer_name, contrib_amt
              FROM ZCDS_SUMMARY_C ORDER BY CUST_NUM;
 
@@ -40,8 +37,14 @@ CLASS zcl_amdp_3 IMPLEMENTATION.
 
 * WORK IN PROGRESS
 
-    RETURN SELECT client, cust_num, customer_name, contrib_amt
-           FROM :ITAB_3;
+*    RETURN SELECT client, cust_num, customer_name, contrib_amt
+*           FROM :ITAB_3;
+
+         RETURN SELECT * FROM :ITAB_1
+                UNION ALL
+                SELECT * FROM :ITAB_2
+                UNION ALL
+                SELECT * FROM :ITAB_3;
 
   ENDMETHOD.
 
