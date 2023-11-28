@@ -3,6 +3,14 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Demo CDS to show total summary'
+
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+
 define view ZCDS_TOTAL_SUMMARY
   as select from ZCDS_TOP5_CONTR
 {
