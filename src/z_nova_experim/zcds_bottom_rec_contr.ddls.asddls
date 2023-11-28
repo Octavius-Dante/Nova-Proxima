@@ -5,19 +5,18 @@
     }
 */
 
-@EndUserText.label: 'demo CDS to return Top 5'
-define table function ZCDS_TOP5_CONTR
-  //  with parameters
-  //    @Environment.systemField: #CLIENT
-  //    p_sap_clnt : abap.clnt
-
+@EndUserText.label: 'Demo CDS to return bottom rcords'
+define table function ZCDS_BOTTOM_REC_CONTR
+//  with parameters
+//    @Environment.systemField: #CLIENT
+//    p_sap_clnt : abap.clnt
+    
 returns
 {
   key mandt         : abap.clnt;
       cust_num      : abap.char(10);
       customer_name : abap.char(71);
-      //contrib_amt   : abap.curr(13,2);
       contrib_amt   : abap.curr(18,2);
 }
 implemented by method
-  ZCL_AMDP_1=>GET_AMT_DETAILS;
+  ZCL_AMDP_2=>GET_AMT_DETAILS;

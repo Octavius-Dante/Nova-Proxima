@@ -1,4 +1,4 @@
-CLASS zcl_amdp_1 DEFINITION
+CLASS zcl_amdp_2 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -6,7 +6,7 @@ CLASS zcl_amdp_1 DEFINITION
   PUBLIC SECTION.
     INTERFACES if_amdp_marker_hdb.
     CLASS-METHODS get_amt_details
-        FOR TABLE FUNCTION zcds_top5_contr.
+        FOR TABLE FUNCTION ZCDS_BOTTOM_REC_CONTR.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -14,7 +14,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_amdp_1 IMPLEMENTATION.
+CLASS zcl_amdp_2 IMPLEMENTATION.
 
   METHOD get_amt_details
 * AMDP Table Function
@@ -24,13 +24,13 @@ CLASS zcl_amdp_1 IMPLEMENTATION.
 * CLIENT needs to be presented in every TABLE function mandt is mandatory in return parameter
 * so selection table (cds) should have MANDT or we should fill it separately
 
-    RETURN  select TOP 5 distinct
-            mandt, cust_num, customer_name, contrib_amt
-            from zcds_contr_line_4 order by contrib_amt desc;
-
-*    RETURN  select TOP 40 distinct
+*    RETURN  select TOP 5 distinct
 *            mandt, cust_num, customer_name, contrib_amt
-*            from zcds_contr_line_4 order by contrib_amt ASC;
+*            from zcds_contr_line_4 order by contrib_amt desc;
+
+    RETURN  select TOP 37 distinct
+            mandt, cust_num, customer_name, contrib_amt
+            from zcds_contr_line_4 order by contrib_amt ASC;
 
   ENDMETHOD.
 
