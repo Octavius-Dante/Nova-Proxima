@@ -5,6 +5,7 @@
 *&---------------------------------------------------------------------*
 REPORT ztest_adobe_sample.
 
+* Sample program for adobe forms using SFLIGHT and SBOOK table data with header and line items
 
 DATA: gd_path TYPE string.
 
@@ -16,7 +17,6 @@ DATA : gt_header TYPE STANDARD TABLE OF ztest_adobe_sample_s,
 DATA : gv_conn TYPE rfcdest.
 
 *PARAMETERS : p_carr TYPE s_carr_id OBLIGATORY.
-
 
 SELECTION-SCREEN: BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
 
