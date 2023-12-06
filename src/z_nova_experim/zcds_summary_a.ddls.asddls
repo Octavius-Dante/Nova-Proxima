@@ -1,10 +1,10 @@
-/*
+
     @ClientHandling: {
     type: #INHERITED,
     algorithm: #SESSION_VARIABLE
     }
 
-*/
+
 @AbapCatalog.sqlViewName: 'ZCDS_SUMMARY_1'
 @AbapCatalog.compiler.compareFilter: true
 @AbapCatalog.preserveKey: true

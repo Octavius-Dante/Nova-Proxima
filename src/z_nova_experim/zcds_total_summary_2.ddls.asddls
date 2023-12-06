@@ -1,3 +1,6 @@
+// if the following client handling annotation is not there 
+// this View will enocunter error 
+
 @ClientHandling: {
 type: #CLIENT_DEPENDENT,
 algorithm: #SESSION_VARIABLE
