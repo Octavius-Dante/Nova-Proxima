@@ -8,7 +8,7 @@ REPORT zjob.
 
 * This program will schedule a job at 5am EST few hours before business starts.
 
-CONSTANTS : job_start_time LIKE sy-uzeit VALUE '5000000'. " 5:00 am
+CONSTANTS : job_start_time LIKE sy-uzeit VALUE '500000'. " 5:00 am
 
 DATA: number TYPE tbtcjob-jobcount,
       name             TYPE tbtcjob-jobname VALUE 'SEND_MAIL_IST_6PM',
