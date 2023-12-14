@@ -8,7 +8,7 @@ REPORT ztmz.
 * schedule this mail sending program
 * as a JOB 3 hours before business hours of EST
 
-DATA: utc_time_stamp TYPE timestamp,
+DATA: utc_time_stamp   TYPE timestamp,
       est_time_stamp   TYPE timestamp,
       target_timestamp TYPE timestamp,
       timezone_date    TYPE d,
@@ -19,7 +19,7 @@ DATA: utc_time_stamp TYPE timestamp,
       seconds_time     TYPE i,
       time_zone        TYPE ttzz-tzone.
 
-DATA : lv_hours TYPE i,
+DATA : lv_hours        TYPE i,
        lv_mins         TYPE i,
        lv_secs         TYPE i,
        lv_total_secs   TYPE i,
@@ -42,8 +42,8 @@ ind_target_time = '180000'.
 ind_calc_time = ind_target_time - timezone_time.
 
 lv_hours = ind_calc_time+0(2).
-lv_mins = ind_calc_time+2(2).
-lv_secs = ind_calc_time+4(2).
+lv_mins  = ind_calc_time+2(2).
+lv_secs  = ind_calc_time+4(2).
 
 * get minutes of the mentioned time
 lv_hours = lv_hours * 60. " converting hours to minutes
