@@ -1589,11 +1589,12 @@ FORM retrievetables USING ilocdictstructure LIKE idictionary[]
          WHERE a~tabname IN sotable
            AND a~tabclass <> 'CLUSTER'
            AND a~tabclass <> 'POOL'
-           AND a~tabclass <> 'VIEW'
+*           AND a~tabclass <> 'VIEW'
            AND a~as4user IN soauthor
            AND a~as4local = 'A'
            AND b~pgmid = 'R3TR'
-           AND b~object = 'TABL'
+*           AND b~object = 'TABL'
+           AND ( b~object = 'TABL' OR b~object = 'VIEW' )
            AND b~devclass IN solocpackage[].
 
   LOOP AT idictstructure INTO wadictstructure.
@@ -7517,6 +7518,11 @@ FORM convertddtohtml USING ilocdictstructure LIKE dumidictstructure[]
         CONCATENATE `      <td><h2><span style="color: #50FA7B"> Structure : ` tablename '</span></h2>' INTO wahtml.
         APPEND wahtml TO ilochtml.
 
+      WHEN 'VIEW'.
+
+        CONCATENATE `      <td><h2><span style="color: #50FA7B"> Database View : ` tablename '</span></h2>' INTO wahtml.
+        APPEND wahtml TO ilochtml.
+
     ENDCASE.
 
   ELSE.
@@ -7531,7 +7537,7 @@ FORM convertddtohtml USING ilocdictstructure LIKE dumidictstructure[]
 * new inclusion - end
 
 *  CONCATENATE `  <h3>Description: ` tabletitle '</h3></td>' INTO wahtml.
-CONCATENATE `<h3> Description: ` tabletitle `</h3>` INTO wahtml.
+  CONCATENATE `<h3> Description: ` tabletitle `</h3>` INTO wahtml.
   APPEND wahtml TO ilochtml.
 * new inclusion - start
   SELECT obj_name devclass
@@ -7769,7 +7775,7 @@ FORM converttabletypetohtml USING iloctabletypes LIKE itabletypes[]
   CONCATENATE '      <td><h2>Table: ' tablename '</h2>' INTO wahtml.
   APPEND wahtml TO ilochtml.
 *  CONCATENATE '  <h3>Description: ' tabletitle '</h3></td>' INTO wahtml.
-CONCATENATE `<h3> Description: ` tabletitle `</h3>` INTO wahtml.
+  CONCATENATE `<h3> Description: ` tabletitle `</h3>` INTO wahtml.
   APPEND wahtml TO ilochtml.
 
 * new inclusion - start
@@ -7834,6 +7840,7 @@ CONCATENATE `<h3> Description: ` tabletitle `</h3>` INTO wahtml.
   APPEND '     </td>' TO ilochtml.
   APPEND '   </tr>' TO ilochtml.
 
+
 * Add a html footer to the table
   PERFORM addhtmlfooter USING ilochtml[].
 ENDFORM.                                                                                  "convertTableTypeToHTML
@@ -7888,7 +7895,7 @@ FORM convertcodetohtml USING icontents LIKE dumihtml[]
   APPEND htmltable.
 
 *  CONCATENATE `<h3> Description: ` shortdescription `</h3></td>` INTO htmltable.
-CONCATENATE `<h3> Description: ` shortdescription `</h3>` INTO htmltable.
+  CONCATENATE `<h3> Description: ` shortdescription `</h3>` INTO htmltable.
   APPEND htmltable.
 * new inclusion - start
   SELECT obj_name devclass
@@ -8185,7 +8192,7 @@ FORM convertclasstohtml USING icontents LIKE dumihtml[]
   APPEND htmltable.
 
 *  CONCATENATE `<h3> Description: ` shortdescription `</h3></td>` INTO htmltable.
-    CONCATENATE `<h3> Description: ` shortdescription `</h3>` INTO htmltable.
+  CONCATENATE `<h3> Description: ` shortdescription `</h3>` INTO htmltable.
   APPEND htmltable.
 * new inclusion - start
   SELECT obj_name devclass
@@ -9835,6 +9842,8 @@ FORM addtabledefinition_doma  USING    ilocdictstructure LIKE dumidictstructure[
 
 * Definetley a structure - Then change the definition type.
       DATA(gv_struct_flag) = 'X'.
+    ELSEIF lv_tabclass EQ 'VIEW'.
+      DATA(gv_view_flag) = 'X'.
     ENDIF.
   ENDIF.
 
