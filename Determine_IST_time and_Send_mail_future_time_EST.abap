@@ -101,7 +101,7 @@ TRY.
         i_sender = lr_sender.
 
     "Email To...
-    lv_email = 'vclement2@worldbankgroup.org'.
+    lv_email = 'sample@xyz.com'.
     lr_recipient = cl_cam_address_bcs=>create_internet_address( lv_email ).
 
     "Add recipient to send request
