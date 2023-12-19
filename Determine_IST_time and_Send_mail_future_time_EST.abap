@@ -6,7 +6,7 @@
 REPORT ztmz.
 
 * schedule this mail sending program
-* as a JOB 3 or 5 hours before business hours of EST depends on winter time and summer time difference
+* as a JOB 3 hours before business hours of EST
 
 DATA: utc_time_stamp   TYPE timestamp,
       est_time_stamp   TYPE timestamp,
@@ -26,6 +26,7 @@ DATA : lv_hours        TYPE i,
        lv_total_mins   TYPE i,
        lo_send_request TYPE REF TO cl_bcs.
 
+
 * MAIL SENDING VARIABLES
 CONSTANTS:
   lc_subject TYPE so_obj_des VALUE 'Email using CL_BCS Class',
@@ -42,6 +43,7 @@ DATA:
   lr_recipient     TYPE REF TO if_recipient_bcs,
   lr_sender        TYPE REF TO cl_sapuser_bcs,
   lr_document      TYPE REF TO cl_document_bcs.
+
 
 time_zone = 'INDIA'.
 
