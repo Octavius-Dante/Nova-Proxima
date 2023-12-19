@@ -6,11 +6,11 @@
 REPORT zjob.
 
 
-* This program will schedule a job at 5am EST few hours before business starts.
+* This program will schedulke a job at 5am EST few hours before business starts.
 
-CONSTANTS : job_start_time LIKE sy-uzeit VALUE '500000'. " 5:00 am
+CONSTANTS : job_start_time  LIKE  sy-uzeit VALUE '050000'. " 5:00 am
 
-DATA: number TYPE tbtcjob-jobcount,
+DATA: number           TYPE tbtcjob-jobcount,
       name             TYPE tbtcjob-jobname VALUE 'SEND_MAIL_IST_6PM',
       print_parameters TYPE pri_params,
       job_start_date   TYPE sy-datum.
@@ -37,14 +37,14 @@ START-OF-SELECTION.
                       VIA JOB name NUMBER number
                       AND RETURN.
     IF sy-subrc = 0.
-
+      job_start_date = job_date.
       CALL FUNCTION 'JOB_CLOSE'
         EXPORTING
           jobcount             = number
           jobname              = name
 *         strtimmed            = 'X'
-          sdlstrtdt            = job_start_date " Job schedule date 
-          sdlstrttm            = job_start_time " Job schedule time 
+          sdlstrtdt            = job_start_date
+          sdlstrttm            = job_start_time
         EXCEPTIONS
           cant_start_immediate = 1
           invalid_startdate    = 2
@@ -63,10 +63,3 @@ START-OF-SELECTION.
   ELSE.
     MESSAGE 'Job creation failed' TYPE 'E'.
   ENDIF.
-
-
-*Messages
-*----------------------------------------------------------
-*
-* Message class: Hard coded
-*   Job schedule failed
