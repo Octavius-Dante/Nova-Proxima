@@ -6,7 +6,10 @@
 REPORT zjob.
 
 
-* This program will schedulke a job at 5am EST few hours before business starts.
+* This program will schedule a job at 5am EST few hours before business starts.
+
+* implement this oss note to send mail in future time
+* https://userapps.support.sap.com/sap/support/knowledge/en/1601472
 
 CONSTANTS : job_start_time  LIKE  sy-uzeit VALUE '050000'. " 5:00 am
 
@@ -31,11 +34,14 @@ START-OF-SELECTION.
       jobname_missing  = 3
       OTHERS           = 4.
   IF sy-subrc = 0.
+
+* Program to send mail determining IST time on the date this program is execuetd in bg.job
     SUBMIT ztmz TO SAP-SPOOL
                       SPOOL PARAMETERS print_parameters
                       WITHOUT SPOOL DYNPRO
                       VIA JOB name NUMBER number
                       AND RETURN.
+
     IF sy-subrc = 0.
       job_start_date = job_date.
       CALL FUNCTION 'JOB_CLOSE'
