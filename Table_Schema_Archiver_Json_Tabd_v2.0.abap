@@ -328,12 +328,38 @@ START-OF-SELECTION.
                                        pback.
   ENDIF.
 
-  DATA(lotablenames) = sotablenames.
 
-  SELECT tabname, tabclass FROM dd02l
-    INTO TABLE @DATA(lt_tables)
-  WHERE tabname IN @sotablenames
-    AND tabclass EQ 'TRANSP'.
+*  DATA(lotablenames) = sotablenames.
+
+  BREAK-POINT.
+
+  IF sopack IS NOT INITIAL.
+
+    SELECT a~tabname, a~tabclass FROM dd02l AS a
+      JOIN tadir AS b ON a~tabname = b~obj_name
+      INTO TABLE @DATA(lt_tables)
+             WHERE a~tabname IN @sotablenames
+             AND a~tabclass EQ 'TRANSP'
+             AND a~tabclass <> 'CLUSTER'
+             AND a~tabclass <> 'POOL'
+             AND a~tabclass <> 'VIEW'
+             AND a~as4local = 'A'
+             AND b~pgmid = 'R3TR'
+             AND b~object = 'TABL'
+             AND b~devclass IN @sopack[].
+
+  ENDIF.
+
+  IF sotable IS NOT INITIAL.
+
+    SELECT tabname, tabclass FROM dd02l
+      INTO TABLE @lt_tables
+    WHERE tabname IN @sotablenames
+      AND tabclass EQ 'TRANSP'.
+
+  ENDIF.
+
+
   IF sy-subrc EQ 0.
 *TRANSP  - Transparent table
     DESCRIBE TABLE lt_tables LINES DATA(lv_lines).
