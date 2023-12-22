@@ -1,10 +1,9 @@
 *&---------------------------------------------------------------------*
-*& Report ZTABLE_SCHEMA_AND_DATA_EXTRACT
+*& Report ZTABLE_SCHEMA_DATA
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT ztable_schema_and_data_extract.
-
+REPORT ztable_schema_data.
 
 * Functionality overview
 
@@ -213,6 +212,17 @@ PARAMETERS : json AS CHECKBOX DEFAULT 'X'. " - Json file for Git ABAP uploader c
 SELECTION-SCREEN SKIP.
 *SELECTION-SCREEN COMMENT /1(79) value_1.
 *PARAMETERS : tabd AS CHECKBOX DEFAULT 'X'. " - Tab-delimited text file
+
+* All records
+PARAMETERS : all_rec RADIOBUTTON GROUP rad1 DEFAULT 'X',
+* Only 50K records
+             50k_rec RADIOBUTTON GROUP rad1,
+* Only 25K records
+             25k_rec RADIOBUTTON GROUP rad1,
+* Only 10K records
+             10k_rec RADIOBUTTON GROUP rad1,
+* Only 5K records
+             5k_rec  RADIOBUTTON GROUP rad1.
 
 SELECTION-SCREEN COMMENT /10(79) value_2.
 SELECTION-SCREEN: END OF BLOCK b2.
@@ -2247,10 +2257,38 @@ FORM process_json  USING pv_table TYPE tabname.
 *** --- Assign field symbol with Structure type of DDIC
   ASSIGN ls_dref->* TO <fs_table>.
 
-  SELECT *
-  FROM (pv_table)
-*  INTO TABLE <ft_table>.
-  INTO TABLE <ft_table> UP TO 50000 ROWS.
+  IF all_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table>.
+
+  ELSEIF 50k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 50000 ROWS.
+
+  ELSEIF 25k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 25000 ROWS.
+
+  ELSEIF 10k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 10000 ROWS.
+
+  ELSEIF 5k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 5000 ROWS.
+
+  ENDIF.
+
 
   IF sy-subrc EQ 0.
 
@@ -2407,10 +2445,37 @@ FORM process_tabd USING pv_table TYPE tabname.
 *** --- Assign field symbol with Structure type of DDIC
   ASSIGN ls_dref->* TO <fs_table>.
 
-  SELECT *
-  FROM (pv_table)
-*  INTO TABLE <ft_table>.
-  INTO TABLE <ft_table> UP TO 50000 ROWS.
+  IF all_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table>.
+
+  ELSEIF 50k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 50000 ROWS.
+
+  ELSEIF 25k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 25000 ROWS.
+
+  ELSEIF 10k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 10000 ROWS.
+
+  ELSEIF 5k_rec EQ abap_true.
+
+    SELECT *
+    FROM (pv_table)
+    INTO TABLE <ft_table> UP TO 5000 ROWS.
+
+  ENDIF.
 
   IF sy-subrc EQ 0.
 
