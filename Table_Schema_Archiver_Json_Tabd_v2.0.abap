@@ -328,10 +328,7 @@ START-OF-SELECTION.
                                        pback.
   ENDIF.
 
-
 *  DATA(lotablenames) = sotablenames.
-
-  BREAK-POINT.
 
   IF sopack IS NOT INITIAL.
 
