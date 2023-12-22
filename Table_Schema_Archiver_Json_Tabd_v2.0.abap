@@ -2444,6 +2444,8 @@ FORM process_json  USING pv_table TYPE tabname.
     ENDIF.
   ENDIF.
 
+  CLEAR LT_TEXT.
+
 *  IF gv_flag_all EQ abap_true.
 *    MESSAGE 'All Json file activities completed' TYPE 'I'.
 *  ENDIF.
