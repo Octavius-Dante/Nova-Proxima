@@ -87,6 +87,31 @@ target_timestamp = cl_abap_tstmp=>add( tstmp = est_time_stamp  secs = lv_total_s
 *lo_send_request->send_request->set_send_at( target_timestamp ).
 *lo_send_request->send( space ).
 
+* If SOST has not configured to send using mail waiting and future mail send option then 
+* Write a program for sending mail and use that program below to schedule dynamic job using target time
+
+*  CALL FUNCTION 'JOB_OPEN'
+*    EXPORTING
+*      jobname          = name
+*    IMPORTING
+*      jobcount         = number
+
+*    SUBMIT ZXXX TO SAP-SPOOL "Program to send mail
+*                      SPOOL PARAMETERS print_parameters
+*                      WITHOUT SPOOL DYNPRO
+*                      VIA JOB name NUMBER number
+*                      AND RETURN.
+
+*      job_start_date = sy-datum.
+*      job_start_time = target_timestamp.
+
+*      CALL FUNCTION 'JOB_CLOSE'
+*        EXPORTING
+*          jobcount             = number
+*          jobname              = name
+*          sdlstrtdt            = job_start_date
+*          sdlstrttm            = job_start_time
+
 TRY.
     "Create send request
     lr_send_request = cl_bcs=>create_persistent( ).
