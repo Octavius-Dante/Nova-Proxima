@@ -33,6 +33,9 @@ USING zmara_1 zmakt.
              from :mara as a join zmakt
              on a.matnr = zmakt.matnr;
 
+* can use string operation in where conditions as mentioned below
+* left(zmakt.maktx, 10) = 'Sample Text';
+
      return select client as mandt, matnr, mtart, meins, maktx
         from :makt;
 
