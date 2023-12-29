@@ -1,8 +1,20 @@
+CLASS zcl_amdp_8_if_exist DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+  INTERFACES if_amdp_marker_hdb.
 
 CLASS-METHODS if_statements
   IMPORTING VALUE(iv_carrid) TYPE scarr-carrid
             VALUE(iv_connid) TYPE spfli-connid
   RAISING   cx_amdp_error.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
 
 
 
