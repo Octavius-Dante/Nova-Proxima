@@ -18,6 +18,8 @@ CLASS zcl_amdp_7_tab_update DEFINITION
 ENDCLASS.
 
 
+* This AMDP procedure works on S4 HANA on-premise (the demo version BTP doesnt allow update - it is abap cloud)
+* Options READ-ONLY wont allow insert or update statement for database 
 
 CLASS zcl_amdp_7_tab_update IMPLEMENTATION.
 
