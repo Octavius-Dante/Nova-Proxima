@@ -32,6 +32,8 @@ CLASS zcl_amdp_1 IMPLEMENTATION.
 *            mandt, cust_num, customer_name, contrib_amt
 *            from zcds_contr_line_4 order by contrib_amt ASC;
 
+
+*           order by concat(STRING 1 , STRING 2) desc;
   ENDMETHOD.
 
 
