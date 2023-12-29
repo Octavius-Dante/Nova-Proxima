@@ -18,7 +18,7 @@ ENDCLASS.
 
 
 
-METHOD if_statements BY DATABASE PROCEDURE
+METHOD zcl_amdp_8_if_exist BY DATABASE PROCEDURE
                         FOR HDB LANGUAGE SQLSCRIPT
                         USING sflight.
   --Example for EXISTS
