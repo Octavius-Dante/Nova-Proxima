@@ -1,3 +1,11 @@
+
+CLASS-METHODS if_statements
+  IMPORTING VALUE(iv_carrid) TYPE scarr-carrid
+            VALUE(iv_connid) TYPE spfli-connid
+  RAISING   cx_amdp_error.
+
+
+
 METHOD if_statements BY DATABASE PROCEDURE
                         FOR HDB LANGUAGE SQLSCRIPT
                         USING sflight.
