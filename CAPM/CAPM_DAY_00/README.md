@@ -100,7 +100,8 @@ Service catalog : https://discovery-center.cloud.sap/viewServices
    </br>   
 
 ** Entitlements and quota : **
-   </br>   
+   </br> 
+   </br> 
 <p>    
 Entitlements are the heart of all subaccounts in SAP BTP. They define which service and runtime artifacts you are able to use. When you purchase an enterprise account, you're entitled to use a specific set of resources, such as the amount of memory that can be allocated to your applications.
 </br>     
