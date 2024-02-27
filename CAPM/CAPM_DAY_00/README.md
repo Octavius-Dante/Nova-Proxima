@@ -130,7 +130,7 @@ If you want to prevent that from happening and set a limit to how much each spac
    </br> 
    </br>  
 
-Go through this blog to create BTP account : https://developers.sap.com/tutorials/hcp-create-trial-account.html
-Go throught this blog to link the BTP account to Eclipse IDE : 
-Go throught this blog to link the Github account to Eclipse IDE : 
+Go through this blog to create BTP account : https://developers.sap.com/tutorials/hcp-create-trial-account.html </br> 
+Go throught this blog to link the BTP account to Eclipse IDE :  </br> 
+Go throught this blog to link the Github account to Eclipse IDE :  </br> 
 
