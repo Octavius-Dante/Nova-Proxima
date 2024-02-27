@@ -72,7 +72,7 @@ This is how other SaaS like SuccessFactors or S/4HANA Cloud work as well. They a
 You don't need to have Cloud Foundry enabled to subscribe to SAP Launchpad Service, for example.
 Examples include Launchpad, SAP Business Application Studio, Cloud Integration, Process Automation...
 
-what is tenant ?  </br>
+What is tenant ?  </br>
 An application inside BTP is called tenant.
 
    </br>
