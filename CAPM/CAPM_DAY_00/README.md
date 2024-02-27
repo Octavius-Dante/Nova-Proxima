@@ -86,7 +86,12 @@ An application inside BTP is called tenant.
 <p> 
 Instance based services
 These are the purest services. They provide a specific functionality, like databases, connectivity, authentication.... You connect your application to them to leverage that functionality. 
-   These services don't provide a UI to manage them. Instead, they rely on API to connect to applications and other services and provide their services. 
-   They are provisioned inside an environment, so they are environment specific. 
-   Each environment has its own organization (for users and applications): In Cloud Foundry, instances are created inside a space. For Kyma, instances are created inside a namespace.
+These services don't provide a UI to manage them. Instead, they rely on API to connect to applications and other services and provide their services. 
+They are provisioned inside an environment, so they are environment specific. 
+Each environment has its own organization (for users and applications): In Cloud Foundry, instances are created inside a space. For Kyma, instances are created inside a namespace.
+
+To use an Instance services you need a service key.
+
 </p>    
+
+Service caalog : https://discovery-center.cloud.sap/viewServices
