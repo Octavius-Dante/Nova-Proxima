@@ -119,8 +119,7 @@ When you remove quotas or entitlements from a subaccount, they become available 
    </br>
    </br> 
    
-** Quota plans : **
-   
+** Quota plans : **  
    </br> 
    </br>  
 <p> 
