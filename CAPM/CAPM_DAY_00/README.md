@@ -5,13 +5,13 @@
 </br>
 </br>
 
-**BTP Trial Account**
+** BTP Trial Account **
 
 - [x] Read this blog to create SAP Account and BTP account https://developers.sap.com/tutorials/hcp-create-trial-account.html
 
 </br>
 
-**Break down structure of the accouts**
+** Break down structure of the accouts **
 
 - [x] SAP Account account of the company -- (Tier 1)
 - [x] SAP Global account for billing by SAP for BTP (BTP Trial / Business Account) -- (Tier 2)
@@ -19,7 +19,7 @@
 
 </br>
 
-** Global Account :**
+** Global Account : **
 
 - [x] This Account is associated with the company for billing purposes for SAP on BTP services 
 - [x] It contains many sub accounts of different region (different data centers)
@@ -27,7 +27,7 @@
 
 </br>
 
-** Sub Account :**
+** Sub Account : **
 
 - [x] This contains service entitlements allocated from global account 
 - [x] Different sub accoutn will have same or different services allcoated for business needs 
@@ -40,7 +40,7 @@
 ## Environments, Subscriptions, Instances  : 
 
 
-** 1 Environments :**
+** 1 Environments : **
    </br>
    </br>
 <p> 
