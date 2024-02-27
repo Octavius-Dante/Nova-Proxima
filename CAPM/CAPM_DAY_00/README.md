@@ -102,14 +102,15 @@ Service catalog : https://discovery-center.cloud.sap/viewServices
 
 Entitlements are the heart of all subaccounts in SAP BTP. They define which service and runtime artifacts you are able to use. When you purchase an enterprise account, you're entitled to use a specific set of resources, such as the amount of memory that can be allocated to your applications.
 </br>     
-</br>   
+  
 An entitlement is your right to provision and consume a resource. In other words, entitlements are the service plans that you're entitled to use.
 </br> 
+
 A quota represents the numeric quantity that defines the maximum allowed consumption of a resource. In other words, how much of a service plan you're entitled to use.
 </br> 
+
 Entitlements and quotas are purchased and managed at global account level, from where they're distributed to subaccounts, which consume them. 
 When you remove quotas or entitlements from a subaccount, they become available again at global account level and can be assigned to other subaccounts.
-
 </p>    
 
    </br>
