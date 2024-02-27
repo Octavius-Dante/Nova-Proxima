@@ -62,7 +62,19 @@ and more—making it easier to manage applications.
    </br>
    </br>
 
-** 2 Subscriptions :**
+** 2 Subscriptions : **
+
+Subscription based services
+You will also see these ones called software as a service (SaaS), or multitenant applications. 
+The experience here is that you subscribe to the service, and in return you receive a URL, from which you can access that service. 
+Opening the URL brings you to a web application from which you can leverage the service. 
+This is how other SaaS like SuccessFactors or S/4HANA Cloud work as well. They are also enabled at a subaccount level, and are independent of the environments. 
+You don't need to have Cloud Foundry enabled to subscribe to SAP Launchpad Service, for example.
+Examples include Launchpad, SAP Business Application Studio, Cloud Integration, Process Automation...
+
+what is tenant ?
+An application inside BTP is called tenant.
+
    </br>
    </br>   
 
