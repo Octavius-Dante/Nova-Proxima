@@ -30,9 +30,10 @@
 ** Sub Account : **
 
 - [x] This contains service entitlements allocated from global account 
-- [x] Different sub accoutn will have same or different services allcoated for business needs 
+- [x] Different sub account will have same or different services allocated for business needs 
 - [x] Users are granted access at this level 
 - [x] Instances of services will be availble here and each instance is capable of single or multiple Dev space
+- [x] One sub account can have multiple space
 
 
 </br>
