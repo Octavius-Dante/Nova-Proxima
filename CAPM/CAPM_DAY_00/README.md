@@ -133,7 +133,7 @@ If you want to prevent that from happening and set a limit to how much each spac
 
 ### Go through the following blogs 
 
-To create BTP account : https://developers.sap.com/tutorials/hcp-create-trial-account.html </br> 
+To Create BTP account : https://developers.sap.com/tutorials/hcp-create-trial-account.html </br> 
 To Create an SAP BTP ABAP Environment Trial User : https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html </br> 
 To Install eclipse and ABAP Dev Environment plugins : https://developers.sap.com/tutorials/abap-install-adt.html </br>
 To link the BTP account to Eclipse IDE : https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html </br> 
