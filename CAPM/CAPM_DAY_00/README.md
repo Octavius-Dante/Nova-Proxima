@@ -126,3 +126,8 @@ When you remove quotas or entitlements from a subaccount, they become available 
 In the Cloud Foundry environment, you can further distribute the quotas that are allocated to a subaccount. This is done by creating space quota plans and assigning them to the spaces.
 Space quota plans are optional and are used to limit how much each space can use, not to enable. If you don't create any space quota plans, all spaces in a subaccount using the Cloud Foundry environment have access to all entitlements and quotas in that subaccount. This means that one space could use up all the quota in a subaccount.
 If you want to prevent that from happening and set a limit to how much each space can use from the total quota available in the subaccount, you can use quota plans and assign them to spaces.   
+
+   </br> 
+   </br>  
+
+Go through this blog to create BTP account : https://developers.sap.com/tutorials/hcp-create-trial-account.html
