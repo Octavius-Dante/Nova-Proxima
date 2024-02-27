@@ -140,3 +140,5 @@ To link the Github account to Eclipse IDE : https://developers.sap.com/tutorials
 
 ### Other essential links from SAP developers training blogs
 
+https://developers.sap.com/tutorial-navigator.html?tag=programming-tool%3Aabap-development
+
