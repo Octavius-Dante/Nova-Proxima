@@ -45,8 +45,10 @@
    </br>
 <p> 
 
-Environment is a platform-as-a-service it is set at sub account level it is for development and administartion of applications 
-it consists of 3 categories ABAP, Cloud foundry and Kyma.
+Environments constitute the actual platform-as-a-service offering of SAP BTP that allows for the development and administration of business applications. 
+Environments are anchored in SAP BTP on subaccount level.
+SAP BTP offers three environments: ABAP, Cloud Foundry and Kyma. 
+Some existing customers still have Neo, but this is no longer offered.
 
 (Kyma is kubernetees termed differently for SAP BTP)
   
