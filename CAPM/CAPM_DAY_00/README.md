@@ -94,4 +94,4 @@ To use an Instance services you need a service key.
 
 </p>    
 
-Service caalog : https://discovery-center.cloud.sap/viewServices
+Service catalog : https://discovery-center.cloud.sap/viewServices
