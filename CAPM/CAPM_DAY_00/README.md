@@ -63,7 +63,9 @@ and more—making it easier to manage applications.
    </br>
 
 ** 2 Subscriptions : **
-
+   </br>
+   </br>
+<p> 
 Subscription based services
 You will also see these ones called <B>software as a service (SaaS)</B>, or multitenant applications. 
 The experience here is that you subscribe to the service, and in return you receive a URL, from which you can access that service. 
@@ -74,12 +76,17 @@ Examples include Launchpad, SAP Business Application Studio, Cloud Integration, 
 
 What is tenant ?  </br>
 An application inside BTP is called tenant.
-
+</p>  
    </br>
    </br>   
 
+** 2 Instances : **
+   </br>
+   </br>
 <p> 
-
-
-  
+Instance based services
+These are the purest services. They provide a specific functionality, like databases, connectivity, authentication.... You connect your application to them to leverage that functionality. 
+   These services don't provide a UI to manage them. Instead, they rely on API to connect to applications and other services and provide their services. 
+   They are provisioned inside an environment, so they are environment specific. 
+   Each environment has its own organization (for users and applications): In Cloud Foundry, instances are created inside a space. For Kyma, instances are created inside a namespace.
 </p>    
