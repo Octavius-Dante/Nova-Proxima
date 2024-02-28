@@ -49,6 +49,11 @@ Connected SAP Systems to the global account (could be on prem or cloud)
 Entity Assignments : https://github.com/Octavius-Dante/Nova-Proxima-/issues/1
 </br>
 </br>
+Service Assignments : 
+</br>
+<img src="./files/4.service_assignment.png" >
+</br>
+</br>
 
 ### Security : 
 </br>
