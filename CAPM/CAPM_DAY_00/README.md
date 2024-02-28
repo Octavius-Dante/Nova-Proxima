@@ -143,3 +143,15 @@ To Link the Github account to Eclipse IDE : https://developers.sap.com/tutorials
 
 https://developers.sap.com/tutorial-navigator.html?tag=programming-tool%3Aabap-development
 
+
+### Business Application Studio : 
+#### DevSpace 
+   </br> 
+SAP Business Application Studio is a development environment available on SAP Business Technology Platform. Before you can start developing using SAP Business Application Studio.
+   </br> 
+   </br>  
+In an Enterprise Account you can set up SAP Business Application Studio as a Free-Tier service by checking its free plan during its entitlement configuration.
+   </br> 
+   </br>  
+The business application studio provides a dev space for developers to create private workspace to have pre-defined dependencies installed for creating particular type of applications e.g. sap fiori, Native HANA development, Cloud application programming development etc.
+
