@@ -219,3 +219,14 @@ Settings :
 <img src="./files/22.SUB_16.png" >
 </br>
 </br>
+</br>
+</br>
+
+### Entitlements :
+</br>
+The services and subscriptions which are available and active in sub accounts are called as entitlements which as details of quota, plans, assignment details and remainign quotas
+</br>
+</br>
+<img src="./files/23.SUB_17.png" >
+</br>
+</br>
