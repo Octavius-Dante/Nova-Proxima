@@ -95,3 +95,8 @@ Select the sub account here
 <img src="./files/7.SUB_1.png" >
 </br>
 </br>
+Sub account overview appears left side navigation menu changes completely 
+</br>    
+<img src="./files/7.SUB_2.png" >
+</br>
+</br>
