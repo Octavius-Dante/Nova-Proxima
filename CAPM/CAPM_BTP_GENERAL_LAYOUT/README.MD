@@ -230,3 +230,14 @@ The services and subscriptions which are available and active in sub accounts ar
 <img src="./files/23.SUB_17.png" >
 </br>
 </br>
+</br>
+</br>
+
+### Usage analytics :
+</br>
+The usage data analytics of sub account services 
+</br>
+</br>
+<img src="./files/24.SUB_18.png" >
+</br>
+</br>
