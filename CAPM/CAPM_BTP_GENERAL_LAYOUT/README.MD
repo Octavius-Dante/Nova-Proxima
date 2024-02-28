@@ -36,7 +36,7 @@ Help you to getto certain predefined template set of activity for quick app deve
 </br>
 Connected SAP Systems to the global account (could be on prem or cloud) 
 </br>
-    <img src="./files/1_trial_account.png" >
+    <img src="./files/4.system_landscapes.png" >
 </br>
 </br>
 
