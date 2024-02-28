@@ -5,27 +5,32 @@
 </br>
 List of sub accounts available for Global accounts listed here 
 </br>
+
 ### Resource providers : 
 </br>
 AWS / AZURE cloud platform services from other providers their technical details to establish connection to leverage their support for BTP
 </br>
 </br>
+
 ### Boosters : 
 </br>
 Help you to getto certain predefined template set of activity for quick app development
 </br>
 </br>
+
 ### System landscapes :
 </br>
 Connected SAP Systems to the global account (could be on prem or cloud) 
 </br>
 </br>
+
 ### Entitlements : 
 </br>
 - Entity assignment (List of services avaialble for sub account can be viewed by selecting sub account based on region)
 - Service assignments (List of services available in global account and assignments)
 </br>
 </br>
+
 ### Security : 
 </br>
 - Users (list of users active in this global / sub account)
@@ -33,6 +38,7 @@ Connected SAP Systems to the global account (could be on prem or cloud)
 - Trust Configuration (added keys cloud foundry, BTP cockpit and BTP CLI config)
 </br>
 </br>
+
 ### Usage : 
 </br>
 Usauge metrics of the service utillised in BTP account 
