@@ -155,7 +155,8 @@ In an Enterprise Account you can set up SAP Business Application Studio as a Fre
    </br>  
 The business application studio provides a dev space for developers to create private workspace to have pre-defined dependencies installed for creating particular type of applications e.g. sap fiori, Native HANA development, Cloud application programming development etc.
 
-
+</br> 
+</br> 
 Git Setup for Windows : https://git-scm.com/download/win 
 </br>  
 Cloud foundry CLI (Command line interface) Tool allows to communicate/ connect to CF : 
