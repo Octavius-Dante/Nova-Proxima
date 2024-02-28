@@ -45,6 +45,7 @@ Connected SAP Systems to the global account (could be on prem or cloud)
 - Entity assignment (List of services avaialble for sub account can be viewed by selecting sub account based on region)
 - Service assignments (List of services available in global account and assignments)
 </br>
+</br>
 Entity Assignments : https://github.com/Octavius-Dante/Nova-Proxima-/issues/1
 </br>
 </br>
