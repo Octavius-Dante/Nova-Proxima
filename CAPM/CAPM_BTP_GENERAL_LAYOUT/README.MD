@@ -113,3 +113,9 @@ Service market place : place for choosing the services for business, create appl
 <img src="./files/10.SUB_4.png" >
 </br>
 </br>
+
+Subscriptions and instances : in this section active subscripion and instances can be found which environment is active and in use are listed 
+</br>    
+<img src="./files/11.SUB_5.png" >
+</br>
+</br>
