@@ -55,15 +55,28 @@ Entity Assignments : https://github.com/Octavius-Dante/Nova-Proxima-/issues/1
 - Role collection (What roles assigned in this global account)
 - Trust Configuration (added keys cloud foundry, BTP cockpit and BTP CLI config)
 </br>
-    <img src="./files/1_trial_account.png" >
+Users
+</br>
+<img src="./files/5.1users.png" >
 </br>
 </br>
+Roll collections
+</br>
+<img src="./files/5.2roll_collection.png" >
+</br>
+</br>
+Trust Config
+</br>
+<img src="./files/5.3trust_config.png" >
+</br>
+</br>
+
 
 ### Usage : 
 </br>
 Usauge metrics of the service utillised in BTP account 
 </br>
-    <img src="./files/1_trial_account.png" >
+    <img src="./files/6.usage.png" >
 </br>
 </br>
 </br>
