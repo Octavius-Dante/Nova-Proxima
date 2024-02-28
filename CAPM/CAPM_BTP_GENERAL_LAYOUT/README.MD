@@ -89,3 +89,9 @@ Usauge metrics of the service utillised in BTP account
 </br>
 
 ## Sub account level in left navigation menu - details & descriptions 
+</br>
+Select the sub account here
+</br>    
+<img src="./files/7.SUB_1.png" >
+</br>
+</br>
