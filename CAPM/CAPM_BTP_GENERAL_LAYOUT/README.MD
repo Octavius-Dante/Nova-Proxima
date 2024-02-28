@@ -207,13 +207,13 @@ Role collections
 <img src="./files/20.SUB_14.png" >
 </br>
 </br>
-Trust confiurations : 
+Trust configurations : 
 </br>
 </br>
 <img src="./files/21.SUB_15.png" >
 </br>
 </br>
-Trust confiurations : 
+Settings : 
 </br>
 </br>
 <img src="./files/22.SUB_16.png" >
