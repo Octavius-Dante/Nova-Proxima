@@ -119,3 +119,24 @@ Subscriptions and instances : in this section active subscripion and instances c
 <img src="./files/11.SUB_5.png" >
 </br>
 </br>
+
+### Cloud foundry :
+
+This contains details about spaces in use and services in use, space quota and organization memebers
+</br>    
+Spaces 
+</br>    
+<img src="./files/12.SUB_6.png" >
+</br>
+</br>
+Space quota
+</br>    
+<img src="./files/13.SUB_7.png" >
+</br>
+</br>
+Org members 
+</br>    
+<img src="./files/14.SUB_8.png" >
+</br>
+</br>
+
