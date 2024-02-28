@@ -12,9 +12,15 @@ List of sub accounts available for Global accounts listed here
 </br>
 AWS / AZURE cloud platform services from other providers their technical details to establish connection to leverage their support for BTP
 </br>
+</br>
 AWS
 </br>
-    <img src="./files/1_trial_account.png" >
+    <img src="./files/2.res.prov_1.png" >
+</br>
+</br>
+AZURE
+</br>
+    <img src="./files/2.res.prov_2.png" >
 </br>
 </br>
 
