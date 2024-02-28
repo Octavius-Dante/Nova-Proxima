@@ -140,3 +140,11 @@ Org members
 </br>
 </br>
 
+### Cloud foundry :
+
+</br>    
+Details about the HTML applciation editions available in the BTP 
+</br>    
+<img src="./files/15.SUB_9.png" >
+</br>
+</br>
