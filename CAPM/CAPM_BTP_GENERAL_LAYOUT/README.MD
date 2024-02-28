@@ -2,7 +2,6 @@
 
 ### Account Explorer : 
 </br>
-</br>
 List of sub accounts available for Global accounts listed here 
 </br>
 
