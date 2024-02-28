@@ -89,6 +89,8 @@ Usauge metrics of the service utillised in BTP account
 </br>
 
 ## Sub account level in left navigation menu - details & descriptions 
+
+### Sub Account overview :
 </br>
 Select the sub account here
 </br>    
@@ -98,5 +100,16 @@ Select the sub account here
 Sub account overview appears in the left side navigation menu changes completely 
 </br>    
 <img src="./files/8.SUB_2.png" >
+</br>
+</br>
+
+### Services :
+
+</br>
+Service market place : place for choosing the services for business, create applciation 
+</br>    
+<img src="./files/9.SUB_3.png" >
+</br>
+<img src="./files/10.SUB_4.png" >
 </br>
 </br>
