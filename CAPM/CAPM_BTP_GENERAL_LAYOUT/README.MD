@@ -45,7 +45,7 @@ Connected SAP Systems to the global account (could be on prem or cloud)
 - Entity assignment (List of services avaialble for sub account can be viewed by selecting sub account based on region)
 - Service assignments (List of services available in global account and assignments)
 </br>
-    <img src="./files/1_trial_account.png" >
+    https://github.com/Octavius-Dante/Nova-Proxima-/blob/main/CAPM/CAPM_BTP_GENERAL_LAYOUT/files/Entity_Assignments.mp4
 </br>
 </br>
 
