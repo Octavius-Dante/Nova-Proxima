@@ -13,7 +13,7 @@
 
 ** Break down structure of the accouts **
 
-- [x] SAP Account account of the company -- (Tier 1)
+- [x] SAP Account it is the account of the company -- (Tier 1)
 - [x] SAP Global account for billing by SAP for BTP (BTP Trial / Business Account) -- (Tier 2)
 - [x] Sub Account (Region wise classification ex: Asia sub1, Eur Sub2, NA Sub3....etc for user accounts) -- (Tier 3)
 
