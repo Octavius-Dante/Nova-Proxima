@@ -4,6 +4,7 @@
 </br>
 List of sub accounts available for Global accounts listed here 
 </br>
+</br>
     <img src="./files/1_trial_account.png" >
 </br>
 </br>
@@ -15,10 +16,12 @@ AWS / AZURE cloud platform services from other providers their technical details
 </br>
 AWS
 </br>
+</br>
     <img src="./files/2.res.prov_1.png" >
 </br>
 </br>
 AZURE
+</br>
 </br>
     <img src="./files/2.res.prov_2.png" >
 </br>
@@ -28,6 +31,7 @@ AZURE
 </br>
 Help you to getto certain predefined template set of activity for quick app development
 </br>
+</br>
     <img src="./files/3.BOOSTERS.png" >
 </br>
 </br>
@@ -35,6 +39,7 @@ Help you to getto certain predefined template set of activity for quick app deve
 ### System landscapes :
 </br>
 Connected SAP Systems to the global account (could be on prem or cloud) 
+</br>
 </br>
     <img src="./files/4.system_landscapes.png" >
 </br>
@@ -51,6 +56,7 @@ Entity Assignments : https://github.com/Octavius-Dante/Nova-Proxima-/issues/1
 </br>
 Service Assignments : 
 </br>
+</br>
 <img src="./files/4.service_assignment.png" >
 </br>
 </br>
@@ -64,15 +70,18 @@ Service Assignments :
 </br>
 Users
 </br>
+</br>
 <img src="./files/5.1users.png" >
 </br>
 
 Roll collections
 </br>
+</br>
 <img src="./files/5.2roll_collection.png" >
 </br>
 
 Trust Config
+</br>
 </br>
 <img src="./files/5.3trust_config.png" >
 </br>
@@ -81,6 +90,7 @@ Trust Config
 ### Usage : 
 </br>
 Usauge metrics of the service utillised in BTP account 
+</br>
 </br>
     <img src="./files/6.usage.png" >
 </br>
@@ -93,12 +103,14 @@ Usauge metrics of the service utillised in BTP account
 ### Sub Account overview :
 </br>
 Select the sub account here
-</br>    
+</br>
+</br>
 <img src="./files/7.SUB_1.png" >
 </br>
 </br>
 Sub account overview appears in the left side navigation menu changes completely 
-</br>    
+</br>
+</br>
 <img src="./files/8.SUB_2.png" >
 </br>
 </br>
@@ -107,7 +119,8 @@ Sub account overview appears in the left side navigation menu changes completely
 
 </br>
 Service market place : place for choosing the services for business, create applciation 
-</br>    
+</br>
+</br>
 <img src="./files/9.SUB_3.png" >
 </br>
 <img src="./files/10.SUB_4.png" >
@@ -115,7 +128,8 @@ Service market place : place for choosing the services for business, create appl
 </br>
 
 Subscriptions and instances : in this section active subscripion and instances can be found which environment is active and in use are listed 
-</br>    
+</br>
+</br>
 <img src="./files/11.SUB_5.png" >
 </br>
 </br>
@@ -125,17 +139,20 @@ Subscriptions and instances : in this section active subscripion and instances c
 This contains details about spaces in use and services in use, space quota and organization memebers
 </br>    
 Spaces 
-</br>    
+</br>
+</br>
 <img src="./files/12.SUB_6.png" >
 </br>
 </br>
 Space quota
-</br>    
+</br>
+</br>
 <img src="./files/13.SUB_7.png" >
 </br>
 </br>
 Org members 
-</br>    
+</br>
+</br>
 <img src="./files/14.SUB_8.png" >
 </br>
 </br>
@@ -144,7 +161,8 @@ Org members
 
 </br>    
 Details about the HTML applciation editions available in the BTP 
-</br>    
+</br>
+</br>
 <img src="./files/15.SUB_9.png" >
 </br>
 </br>
@@ -153,12 +171,14 @@ Details about the HTML applciation editions available in the BTP
 
 </br>    
 Destination : details about the systems connected to BTP account 
-</br>    
+</br>
+</br>
 <img src="./files/16.SUB_10.png" >
 </br>
 </br>    
 Cloud connectors : cloud systems connected to BTP account 
-</br>    
+</br>
+</br>
 <img src="./files/17.SUB_11.png" >
 </br>
 </br>
