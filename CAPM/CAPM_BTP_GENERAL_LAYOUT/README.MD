@@ -28,7 +28,7 @@ AZURE
 </br>
 Help you to getto certain predefined template set of activity for quick app development
 </br>
-    <img src="./files/1_trial_account.png" >
+    <img src="./files/3.BOOSTERS.png" >
 </br>
 </br>
 
