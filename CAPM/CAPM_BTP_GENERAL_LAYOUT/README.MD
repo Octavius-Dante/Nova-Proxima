@@ -144,6 +144,7 @@ Org members
 
 </br>    
 Details about the HTML applciation editions available in the BTP 
+
 </br>    
 <img src="./files/15.SUB_9.png" >
 </br>
@@ -153,11 +154,13 @@ Details about the HTML applciation editions available in the BTP
 
 </br>    
 Destination : details about the systems connected to BTP account 
+
 </br>    
 <img src="./files/16.SUB_10.png" >
 </br>
 </br>    
 Cloud connectors : cloud systems connected to BTP account 
+
 </br>    
 <img src="./files/17.SUB_11.png" >
 </br>
