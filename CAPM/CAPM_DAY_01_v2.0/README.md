@@ -231,7 +231,7 @@ if the app is not running and the link is accessed will get error message like b
 </br>
 
 
-**Additional command for generating sample applciation**
+**Additional command for generating sample application automatically**
    </br>
    </br>
    In Vscode / BAS after proper cloning of github repositiory with (select folder options) projects folder this command is possible refer section github repository cloning (explorer tab)
