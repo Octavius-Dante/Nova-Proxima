@@ -5,13 +5,13 @@
 </br>
 </br>
 
-** BTP Trial Account **
+**BTP Trial Account**
 
 - [x] Read this blog to create SAP Account and BTP account https://developers.sap.com/tutorials/hcp-create-trial-account.html
 
 </br>
 
-** Break down structure of the accouts **
+**Break down structure of the accouts**
 
 - [x] SAP Account it is the account of the company -- (Tier 1)
 - [x] SAP Global account for billing by SAP for BTP (BTP Trial / Business Account) -- (Tier 2)
@@ -19,7 +19,7 @@
 
 </br>
 
-** Global Account : **
+**Global Account :**
 
 - [x] This Account is associated with the company for billing purposes for SAP on BTP services 
 - [x] It contains many sub accounts of different region (different data centers)
@@ -27,7 +27,7 @@
 
 </br>
 
-** Sub Account : **
+**Sub Account :**
 
 - [x] This contains service entitlements allocated from global account 
 - [x] Different sub account will have same or different services allocated for business needs 
@@ -41,7 +41,7 @@
 ## Environments, Subscriptions, Instances  : 
 
 
-** 1 Environments : **
+**1 Environments :**
    </br>
    </br>
 <p> 
@@ -63,7 +63,7 @@ and more—making it easier to manage applications.
    </br>
    </br>
 
-** 2 Subscriptions : **
+**2 Subscriptions :**
    </br>
    </br>
 <p> 
@@ -81,7 +81,7 @@ An application inside BTP is called tenant.
    </br>
    </br>   
 
-** 3 Instances : **
+**3 Instances :**
    </br>
    </br>
 <p> 
@@ -100,7 +100,7 @@ Service catalog : https://discovery-center.cloud.sap/viewServices
    </br>
    </br>   
 
-** Entitlements and quota : **
+**Entitlements and quota :**
    </br> 
    </br> 
 <p>    
@@ -120,7 +120,7 @@ When you remove quotas or entitlements from a subaccount, they become available 
    </br>
    </br> 
    
-** Quota plans : **  
+**Quota plans :**  
    </br> 
    </br>  
 <p> 
