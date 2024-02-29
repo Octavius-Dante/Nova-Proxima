@@ -144,7 +144,7 @@ func main() {
 **Cloning Github repository to VSCode**
 </br>
 </br>
- During this activity make sure you select the explorer tab (first one in the left) then proceed for clone repository option (else you wont get folder select options)
+ During this activity make sure you select the explorer tab (first one in the left) then proceed for clone repository option (else you wont get folder select options) this enables SSH connection of repository cloning else it will be a normal local cloning that wont work well for furhter activities (look below left side of the window with BLUE hightlight to confirm SSH connection)
 </br>
 </br>
     <img src="./files/4.APP_10.png" >
