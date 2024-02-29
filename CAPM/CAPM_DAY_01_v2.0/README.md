@@ -230,6 +230,25 @@ if the app is not running and the link is accessed will get error message like b
 </br>
 </br>
 
+
+**Additional command for generating sample applciation**
+   </br>
+   </br>
+   
+   ```bat
+   cds init <in Vscode / BAS btp login only when select folder option is selected from explorer from navigation menu this login is possible and this commadn is possible>
+   ```
+   </br>
+   </br>
+    <img src="./files/7.APP_1.png" >
+   </br>
+   </br>
+    <img src="./files/7.APP_2.png" >
+   </br>
+   </br>
+   </br>
+   </br>
+
 **Pre-requisities before app deployment**
 
 - [x] App should have manifest.yml file 
