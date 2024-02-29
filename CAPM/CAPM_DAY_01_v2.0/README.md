@@ -144,13 +144,13 @@ func main() {
 **Cloning Github repository to VSCode**
 </br>
 </br>
+ During this activity make sure you select the explorer tab (first one in the left) then proceed for clone repository option (else you wont get folder select options)
+</br>
+</br>
     <img src="./files/4.APP_10.png" >
 </br>
 </br>
     <img src="./files/4.APP_11.png" >
-</br>
-</br>
- During this activity make sure you select the explorer tab (first one in the left) then proceed for clone repository option (else you wont get folder select options)
 </br>
 </br>
     <img src="./files/4.APP_12.png" >
