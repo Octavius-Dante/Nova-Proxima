@@ -234,9 +234,12 @@ if the app is not running and the link is accessed will get error message like b
 **Additional command for generating sample applciation**
    </br>
    </br>
+   In Vscode / BAS after proper cloning of github repositiory with (select folder options) projects folder this command is possible refer section github repository cloning (explorer tab)
+   </br>
+   </br>
    
    ```bat
-   cds init <in Vscode / BAS btp login only when select folder option is selected from explorer from navigation menu this login is possible and this commadn is possible>
+   cds init 
    ```
    </br>
    </br>
