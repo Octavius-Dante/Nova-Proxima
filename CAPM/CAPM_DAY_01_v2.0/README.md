@@ -219,24 +219,11 @@ func main() {
     <img src="./files/6.APP_4.png" >
 </br>
 </br>
+if the app is not running and the link is accessed will get error message like below
+</br>
+</br>
     <img src="./files/6.APP_5.png" >
 </br>
-</br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </br>
 </br>
 
