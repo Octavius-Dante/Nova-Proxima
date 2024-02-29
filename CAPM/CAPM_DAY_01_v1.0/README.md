@@ -59,6 +59,13 @@
     <img src="./files/1-cf_login-sso.png" >
    </br>
    </br>
+
+1.(C) API endpoint requested in terminal
+   </br>
+   </br>
+    <img src="./files/1-api_endpoint.png" >
+   </br>
+   </br>
    
 2. Checking the available buildpacks in the cloud environment
    </br>
