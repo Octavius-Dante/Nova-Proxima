@@ -34,7 +34,7 @@
 ## Commands involved in general & app deployment activities : 
 
 
-1. Logging In
+1.(A) Logging In
    </br>
    </br>
    
@@ -44,6 +44,19 @@
    </br>
    </br>
     <img src="./files/1-cf_login.png" >
+   </br>
+   </br>
+
+1.(B) Logging In using SSO
+   </br>
+   </br>
+   
+   ```bat
+   cf login --sso
+   ```
+   </br>
+   </br>
+    <img src="./files/1-cf_login-sso.png" >
    </br>
    </br>
    
