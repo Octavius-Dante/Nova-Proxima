@@ -252,6 +252,29 @@ if the app is not running and the link is accessed will get error message like b
    </br>
    </br>
 
+  to deploy the data set to local temp server for testing the cds app 
+   </br>
+   </br>
+   
+   ```bat
+   cds deploy --to sqlite:<data set name>
+   ```
+   </br>
+   </br>
+   </br>
+  
+  To run the CDS app
+   </br>
+   </br>
+   
+   ```bat
+   cds run
+   ```
+   </br>
+   </br>
+   </br>
+
+
 **Pre-requisities before app deployment**
 
 - [x] App should have manifest.yml file 
