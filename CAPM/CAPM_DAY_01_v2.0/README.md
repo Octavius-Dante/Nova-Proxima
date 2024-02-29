@@ -49,9 +49,6 @@
 </br>
 </br>
 
-</br>
-</br>
-
 **Application file [main.go]**
 </br>
 </br>
@@ -82,9 +79,6 @@ func main() {
 }
    ```
 </br>
-</br>
-</br>
-
 </br>
 </br>
 
