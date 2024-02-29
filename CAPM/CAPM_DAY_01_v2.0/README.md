@@ -252,7 +252,7 @@ if the app is not running and the link is accessed will get error message like b
    </br>
    </br>
 
-  to deploy the data set to local temp server for testing the cds app 
+  to deploy the data set to local temp server for testing the cds app - this gets created under SRV folder 
    </br>
    </br>
    
