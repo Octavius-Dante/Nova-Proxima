@@ -1,6 +1,6 @@
 ## [CAPM] Cloud application programming model
 
-### Starter guide for CAPM Basic commands 
+### Starter guide for CAPM Basic commands on local command prompt
 
 </br>
 </br>
