@@ -170,3 +170,22 @@
     <img src="./files/9-cf_scale_i.png" >
    </br>
    </br>
+
+10. To check the environment details of an APP 
+   </br>
+   </br>
+   
+   ```bat
+   cf end <app name> 
+   ```
+   </br>
+   </br>
+    <img src="./files/10-cf_env_1.png" >
+   </br>
+   </br>
+    <img src="./files/10-cf_env_2.png" >
+   </br>
+   </br>
+    <img src="./files/10-cf_env_3.png" >
+   </br>
+   </br>
