@@ -176,7 +176,7 @@
    </br>
    
    ```bat
-   cf end <app name> 
+   cf env <app name> 
    ```
    </br>
    </br>
