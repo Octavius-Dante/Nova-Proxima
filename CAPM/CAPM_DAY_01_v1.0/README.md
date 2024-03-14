@@ -174,6 +174,9 @@
 10. To check the environment details of an APP 
    </br>
    </br>
+   VCAP_SERVICES is an environment variable which holds credential details 
+   </br>
+   </br>
    
    ```bat
    cf env <app name> 
