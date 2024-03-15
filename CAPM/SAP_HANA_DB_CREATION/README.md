@@ -2,7 +2,7 @@
 
 ### How to create HANA DB in BTP account 
 
-## steps involved in cration as follows
+## steps involved in HDB creation as follows
 
 
 step 1
