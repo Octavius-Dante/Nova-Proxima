@@ -47,13 +47,17 @@
                 "$XSAPPNAME.UserEdit"
             ]
         }
-    ]
-	"authorities":["$ACCEPT_GRANTED_AUTHORITIES"],
-	"aouth2-configuration":{
-				"token-validity":9000
-				"redirect-uris":["https://api.cf.us10-001.hana.ondemand.com/"]							
-	}
-	"xsenableasyncservice":true
+    ],
+    "authorities": [
+        "$ACCEPT_GRANTED_AUTHORITIES"
+    ],
+    "aouth2-configuration": {
+        "token-validity": 9000,
+        "redirect-uris": [
+            "https://api.cf.us10-001.hana.ondemand.com/"
+        ]
+    },
+    "xsenableasyncservice": "true"
 }
    ```
    
