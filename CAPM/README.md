@@ -7,8 +7,11 @@
 
 **Overview**
 <br>
+<br>
 Following check list of items available under this topic 
 <br>
+<br>
+- [x] BTP Account layout overview for understanding
 - [x] BTP Day 0 - Overview and account creation 
 - [x] BTP Day 1 - Commands for application handling in BTP 
 - [x] BTP Day 2 - Maven and Spring STS services (Java and spring program)
