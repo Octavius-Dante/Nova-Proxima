@@ -20,6 +20,7 @@ Following check list of items available under this topic
 - [x] SAP HDI schema establishment
 - [x] SAP Authorization and Trust Management Service - XSUAA (WIP)
 - [x] VScode installation + Node JS installation (WIP)
+- [x] JS Concepts Promise / Callback
 - [x] NODE JS BASIC 1- preapring ndoe js basic program 
 - [x] NODE JS BASIC 2- preapring ndoe js program with some essential concepts for CAPM app
 - [x] NODE Micro services - deploying a samll node js app to BTP 
