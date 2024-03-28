@@ -1,6 +1,6 @@
-## [CAPM] Cloud application programming model
+## BTP - DAY 1 (2.0)
 
-### CAPM - BTP account activities before app deployment
+### BTP account activities before app deployment
 </br>
 </br>
 
