@@ -1,6 +1,6 @@
-## [CAPM] Cloud application programming model
+## BTP - DAY 1 (1.0)
 
-### Starter guide for CAPM Basic commands on local command prompt
+### Starter guide for BTP Basic commands on local command prompt
 
 </br>
 </br>
