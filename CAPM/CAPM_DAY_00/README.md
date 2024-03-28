@@ -1,4 +1,4 @@
-## [CAPM] Cloud application programming model Overview
+## Business Technology Platform - DAY 00 
 
 ### Starter guide for cloud foundry BTP
 
