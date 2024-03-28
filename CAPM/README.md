@@ -6,7 +6,7 @@
 </br>
 
 **Overview**
-Following check list is to make the setup preparation for programming in JAVA 
+Following check list of items available under this topic 
 
 - [x] BTP Day 0 - Overview and account creation 
 - [x] BTP Day 1 - Commands for application handling in BTP 
