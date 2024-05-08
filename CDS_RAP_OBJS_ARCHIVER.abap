@@ -170,11 +170,11 @@ START-OF-SELECTION.
             AND t~object EQ 'SRVD'
             AND t~devclass IN @s_dev.
   IF sy-subrc EQ 0.
-    LOOP AT it_ddddlsrc INTO wa_ddddlsrc.
-      wa_final-object_name   = wa_ddddlsrc-ddlname.
-      wa_final-object_source = wa_ddddlsrc-ddls_source.
-      wa_final-devclass      = wa_ddddlsrc-devclass.
-      wa_final-object        = wa_ddddlsrc-object.
+    LOOP AT it_srvd INTO wa_srvd.
+      wa_final-object_name   = wa_srvd-srvdname.
+      wa_final-object_source = wa_srvd-srvd_source.
+      wa_final-devclass      = wa_srvd-devclass.
+      wa_final-object        = wa_srvd-object.
       APPEND wa_final TO it_final.
       CLEAR : wa_final, wa_ddddlsrc.
     ENDLOOP.
