@@ -1,7 +1,7 @@
 
     @ClientHandling: {
-    type: #INHERITED,
-    algorithm: #SESSION_VARIABLE
+    type: #INHERITED //,
+    //algorithm: #SESSION_VARIABLE
     }
 
 
