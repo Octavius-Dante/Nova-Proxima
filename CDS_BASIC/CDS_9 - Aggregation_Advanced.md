@@ -1,5 +1,5 @@
 To calcualte the sum and based on condition some records 
-have to be subtracted in he sum of record under a key field
+have to be subtracted in the sum of record under a key field
 
 Sample as follows
 
