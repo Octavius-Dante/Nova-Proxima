@@ -1,6 +1,8 @@
 To calcualte the sum and based on condition some records 
 have to be subtracted in the sum of record under a key field
 
+Having keyword is like where condition for an aggregation statement (in aggregation statement where clause is not allowed so having clause is used in the place of where)
+
 Sample as follows
 
 ``` abap
