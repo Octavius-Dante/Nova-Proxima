@@ -1,6 +1,8 @@
 
 ## Data Migration in S/4 HANA
 
+<br><br>
+
 **Data migration in S4 Systems are carried out via 2 objects**
 
 1. *Legacy Transformation Migration Cockpit* ~ **LTMC** is a T-Code
