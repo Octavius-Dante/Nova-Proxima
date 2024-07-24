@@ -10,8 +10,8 @@ when Ip address and Port details are not available in sap logon pad due to secur
 
  
 - goto tcode OS01 
-- select application server button
-- if application server and IP address is not shown - select change view 
+- select **"application server"** button
+- if application server and IP address is not shown - select **"change view"** 
 - this should show the Ip address details  
 
 </br></br>
