@@ -1,5 +1,5 @@
 this section contains abap editor theme files 
 
-need ot replace it with files from zip folder to 
+need to replace 'abap4_spec.xml' file from the directory : AppData\Roaming\SAP\SAP GUI\ABAP Editor\
 
-AppData\Roaming\SAP\SAP GUI\ABAP Editor\
+with file from the .zip or .rar file 
