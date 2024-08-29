@@ -16,7 +16,6 @@ when Ip address and Port details are not available in sap logon pad due to secur
 - Alternative way Tcode - SE37 : Function Module : RFC_HOST_TO_IP
 - Function Module : RFC_IP_TO_HOST for finding Host name wiht IP address
   
-
 </br></br>
 </br>
 
