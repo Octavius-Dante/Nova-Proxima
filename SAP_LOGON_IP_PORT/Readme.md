@@ -14,6 +14,9 @@ when Ip address and Port details are not available in sap logon pad due to secur
 - if application server and IP address is not shown - select **"change view"** 
 - this should show the Ip address details  
 
+Alternative way -using Tcode - SE37 
+Function Module : RFC_HOST_TO_IP
+
 </br></br>
 </br>
 
