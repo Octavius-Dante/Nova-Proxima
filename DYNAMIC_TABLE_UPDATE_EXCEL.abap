@@ -39,7 +39,7 @@ START-OF-SELECTION.
       filename                = p_file
       i_begin_col             = 1
       i_begin_row             = 1
-      i_end_col               = 99
+      i_end_col               = 99 "increase the field number accodingly as per the table fields
       i_end_row               = 999999
     TABLES
       intern                  = lt_excel
