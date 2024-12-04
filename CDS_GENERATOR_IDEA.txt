@@ -1,0 +1,44 @@
+cds generator - idea 
+
+base table name (drop down) execute 
+
+pop up (2 radio button)
+direct connectivity  
+indirect connectivity
+
+-------------
+
+if direct connect selected - proceed ok 
+- will show the foreign key associated tables in check box 
+
+and join or assocaition radio button is selected
+- [] table name (.) association (.) join inner (.) left outer (.) right join
+      (.) cross join 
+
+
+if check box is selected - proceed ok (as many tables involved) as many pop up will be displayed : 
+
+pop up fields with field name and description listed with check box (all fields option)
+
+- based on selection -- cds is created  
+
+-------------
+
+if in-direct connect selected - proceed ok 
+- will give you an option field manually enter number 1-20
+
+in next pop up 20 input fields is listed table should be selected ????
+and join or assocaition radio button is selected
+- [table name] (.) association (.) join inner (.) left outer (.) right join
+      (.) cross join 
+
+proceed ok
+
+
+based on table selection - pop up with field selection can be shown
+select fields -(multiple pop ups based on multiple table name is filled)
+
+if 20 fields listed entered only 5 fields only 5 pop-up is generated 
+
+- based on selection -- cds is created  
+--------------
