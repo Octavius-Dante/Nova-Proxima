@@ -1,0 +1,12 @@
+
+
+"TBTCO" Job Status Overview Table.
+"TBTCP" Background Job Step Overview
+
+SM37 : 
+
+JOB NAME : <provide the appropriate job name>
+USER : * (It can be star)
+PROGRAM NAME : <if you know hte program name>
+
+date range you cna give last last month date to till sy-datum date 
