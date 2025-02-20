@@ -1,5 +1,6 @@
 ## External Session information in the title of the SAP TRANSACTION
 
+</BR>
 
 1. Create "SAP\SAP GUI\" Directories in my documents
 2. Place the "ESession.txt" file from *.zip file.
