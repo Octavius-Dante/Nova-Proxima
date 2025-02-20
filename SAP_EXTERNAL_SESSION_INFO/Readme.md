@@ -1,5 +1,5 @@
-1. create "SAP\SAP GUI\" Direcoties in my documents
-2. place the "ESession.txt" file from *.zip file.
+1. Create "SAP\SAP GUI\" Directories in my documents
+2. Place the "ESession.txt" file from *.zip file.
 
 
 </BR>
