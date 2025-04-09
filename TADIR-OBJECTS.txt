@@ -1,0 +1,13 @@
+
+
+input object with wild card  gv_name
+
+pass it to tadir-objname 
+
+get object_type, pgmid 
+
+pass it to FM : REPOSITORY_F4_SELECT_DARK
+
+descripti on is retrieved 
+
+display , object type , repository (expanded name of the object) , object name , object description 
