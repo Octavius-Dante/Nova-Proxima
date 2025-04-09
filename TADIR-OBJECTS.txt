@@ -8,6 +8,6 @@ get object_type, pgmid
 
 pass it to FM : REPOSITORY_F4_SELECT_DARK
 
-descripti on is retrieved 
+description is retrieved 
 
 display , object type , repository (expanded name of the object) , object name , object description 
