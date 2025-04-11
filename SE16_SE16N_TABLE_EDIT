@@ -22,7 +22,7 @@ if code = 'SHOW'.
 
 ------------------------
 
-SE16N , before displaying the records 
+SE16N , before executing the record for display
 
 /h in tcode section 
 
