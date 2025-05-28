@@ -4,7 +4,7 @@
 
 2.display the records
 
-3.double click the required records (select the record and click display button)
+3.select the record and click display button
 
 4.goto debug mode
 
@@ -14,7 +14,7 @@ if code = 'SHOW'.
 
 6.double click the code
 
-7.change the value to 'EDIT'.
+7.change the value from 'SHOW 'to 'EDIT'.
 
 8.then press F8
 
