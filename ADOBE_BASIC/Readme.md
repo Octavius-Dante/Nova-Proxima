@@ -117,3 +117,6 @@
         <td>For internal use only</td>
     </tr>
 </table>
+
+
+[download this zip file from this repository and extract it and go through the wod document](https://github.com/Octavius-Dante/Nova-Proxima/blob/main/ADOBE_BASIC/ZTEST_ADOBE_SAMPLES.zip)
