@@ -91,7 +91,8 @@ TYPES : BEGIN OF ty_flight,
           fldate  TYPE s_date,
         END OF ty_flight.
 
-DATA lt_new_flights TYPE STANDARD TABLE OF ty_flight.
+DATA : lt_new_flights   TYPE STANDARD TABLE OF ty_flight,
+       lt_new_flights_2 TYPE STANDARD TABLE OF ty_flight.
 
 SELECT * FROM sflight INTO TABLE @DATA(lt_flights).
 IF sy-subrc EQ 0.
@@ -105,9 +106,26 @@ ENDIF.
 lt_new_flights = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
                           WHERE ( carrid = 'AA' AND
                                  connid = '0017' )
+
     LET lv_carrname = lt_scarr[ carrid = ls_flight-carrid ]-carrname
     IN  carrier = lv_carrname
-      ( seq_num = lv_index
+      (
+        seq_num = lv_index
+        connect = ls_flight-connid
+        fldate  = ls_flight-fldate
+      ) ).
+
+
+lt_new_flights_2 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
+                            WHERE ( carrid = 'AA' AND
+                                    connid = '0017' )
+
+    LET lv_carrname = lt_scarr[ carrid = ls_flight-carrid ]-carrname
+*    IN  carrier = lv_carrname
+      IN
+      (
+        carrier = lv_carrname
+        seq_num = lv_index
         connect = ls_flight-connid
         fldate  = ls_flight-fldate
       ) ).
