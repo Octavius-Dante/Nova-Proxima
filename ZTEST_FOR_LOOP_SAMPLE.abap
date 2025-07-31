@@ -123,8 +123,7 @@ lt_new_flights_2 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
                                     connid = '0017' )
 
     LET lv_carrname = lt_scarr[ carrid = ls_flight-carrid ]-carrname
-*    IN  carrier = lv_carrname
-      IN
+    IN
       (
         carrier = lv_carrname
         seq_num = lv_index
@@ -136,8 +135,7 @@ lt_new_flights_3 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
                             WHERE ( carrid = 'AA' AND
                                     connid = '0017' )
 
-                     FOR ls_scarr IN lt_scarr WHERE ( carrid = ls_flight-carrid )
-
+                   FOR ls_scarr IN lt_scarr WHERE ( carrid = ls_flight-carrid )
                    ( carrier = ls_scarr-carrname
                      seq_num = lv_index
                      connect = ls_flight-connid
