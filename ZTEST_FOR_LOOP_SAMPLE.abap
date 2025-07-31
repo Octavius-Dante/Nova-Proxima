@@ -92,7 +92,8 @@ TYPES : BEGIN OF ty_flight,
         END OF ty_flight.
 
 DATA : lt_new_flights   TYPE STANDARD TABLE OF ty_flight,
-       lt_new_flights_2 TYPE STANDARD TABLE OF ty_flight.
+       lt_new_flights_2 TYPE STANDARD TABLE OF ty_flight,
+       lt_new_flights_3 TYPE STANDARD TABLE OF ty_flight.
 
 SELECT * FROM sflight INTO TABLE @DATA(lt_flights).
 IF sy-subrc EQ 0.
@@ -129,6 +130,19 @@ lt_new_flights_2 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
         connect = ls_flight-connid
         fldate  = ls_flight-fldate
       ) ).
+
+lt_new_flights_3 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
+                            WHERE ( carrid = 'AA' AND
+                                    connid = '0017' )
+
+                     FOR ls_scarr IN lt_scarr WHERE ( carrid = ls_flight-carrid )
+
+                   ( carrier = ls_scarr-carrname
+                     seq_num = lv_index
+                     connect = ls_flight-connid
+                     fldate  = ls_flight-fldate
+                     ) ).
+
 **##########################################################################################
 
 BREAK-POINT.
