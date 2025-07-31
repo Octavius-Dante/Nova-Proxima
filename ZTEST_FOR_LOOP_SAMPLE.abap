@@ -102,6 +102,7 @@ IF sy-subrc EQ 0.
 ENDIF.
 
 ** For loop sample # 3
+** all the following loops perform the same thing 
 **##########################################################################################
 "FOR Iteration
 lt_new_flights = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
