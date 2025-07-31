@@ -68,7 +68,8 @@ IF sy-subrc EQ 0.
 * Multiple FOR loop Value # filter
 **##########################################################################################
     lt_conf_2 = VALUE #( FOR ls_afih IN gt_afih WHERE ( ilart = 'REG')
-                         FOR ls_conf IN gt_conf_bkup WHERE ( aufnr = ls_afih-aufnr )
+                         FOR ls_conf IN gt_conf_bkup WHERE ( aufnr = ls_afih-aufnr AND
+                                                             linear_flg = abap_true )
                        ( ls_conf ) ).
 
 **##########################################################################################
