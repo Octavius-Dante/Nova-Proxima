@@ -131,6 +131,9 @@ lt_new_flights_2 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
         fldate  = ls_flight-fldate
       ) ).
 
+** LT_NEW_FLIGHT_3 - can be a new declaration data(lt_new_flights_3) 
+** since value # ( multiple for loop ) is preparing a new structure not using any existing work areas fully 
+
 lt_new_flights_3 = VALUE #( FOR ls_flight IN lt_flights INDEX INTO lv_index
                             WHERE ( carrid = 'AA' AND
                                     connid = '0017' )
