@@ -46,4 +46,4 @@ http://<your_sap_system>:<port>/sap/bc/gui/sap/its/webgui
 
 ```
 
-To know the sap system and port details visit this tcode in GUI : go to ' SMICM ' or use NWBC tcoe and check the browser which popsup
+To know the sap system and port details visit this tcode in GUI : go to ' SMICM ' or use NWBC tcode and check the URL section of the browser which popsup
