@@ -46,3 +46,19 @@ To know the sap system and port details you can try following 2 methods
 
 - visit this tcode in GUI : SMICM and access menu (Goto -> Services) and check HTTPS protocol entry
 - NWBC tcode and check the URL section of the browser which popsup
+
+
+</br></br>
+
+### Step 3: Access the Transaction via Web Browser </br>
+Once ITS is active, you can access any SAP GUI transaction via a web browser.
+</br>
+### Access the Transaction:
+</br>
+Enter the following URL in your browser:
+</br>
+
+```
+http://<your_sap_system>:<port>/sap/bc/gui/sap/its/webgui/?sap-client=<client>&sap-language=EN&~transaction=ME23N
+
+```
