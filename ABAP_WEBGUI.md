@@ -20,6 +20,7 @@ The Internet Transaction Server (ITS) must be set up and active in your system f
 </br>
 ### Check ITS Setup: 
 </br>
+
 - Go to transaction SICF and ensure the ITS-related services are active. 
 - Navigate to the path: default_host -> sap -> bc -> gui -> sap -> its -> webgui. 
 - If it’s not active, right-click and select "Activate Service." 
