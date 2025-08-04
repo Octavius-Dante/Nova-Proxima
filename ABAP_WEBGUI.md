@@ -48,5 +48,5 @@ http://<your_sap_system>:<port>/sap/bc/gui/sap/its/webgui
 
 To know the sap system and port details you can try following 2 methods
 
-1 visit this tcode in GUI : SMICM and access menu (Goto -> Services) and check HTTPS protocol entry
-2 NWBC tcode and check the URL section of the browser which popsup
+- visit this tcode in GUI : SMICM and access menu (Goto -> Services) and check HTTPS protocol entry
+- NWBC tcode and check the URL section of the browser which popsup
