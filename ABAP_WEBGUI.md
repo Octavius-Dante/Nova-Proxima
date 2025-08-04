@@ -10,7 +10,7 @@ SAP GUI for HTML is a web-based interface that allows SAP transactions, traditio
 - No client installation: Users can access SAP transactions via a browser.
 - Cross-platform access: Supports different browsers and devices.
 - Enhanced user experience: Can integrate with SAP Fiori for a more intuitive interface.
-- 
+
 </br></br>
 
 ### Converting ABAP Tcode into a Web App Using SAP GUI for HTML </br>
