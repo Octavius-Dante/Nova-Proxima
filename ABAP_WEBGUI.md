@@ -10,7 +10,8 @@ SAP GUI for HTML is a web-based interface that allows SAP transactions, traditio
 - No client installation: Users can access SAP transactions via a browser.
 - Cross-platform access: Supports different browsers and devices.
 - Enhanced user experience: Can integrate with SAP Fiori for a more intuitive interface.
-
+- 
+</br></br>
 
 ### Converting ABAP Tcode into a Web App Using SAP GUI for HTML </br>
 To convert an existing ABAP Tcode into a web-based application using SAP GUI for HTML, follow these steps:
@@ -24,3 +25,18 @@ The Internet Transaction Server (ITS) must be set up and active in your system f
 - Go to transaction SICF and ensure the ITS-related services are active. 
 - Navigate to the path: default_host -> sap -> bc -> gui -> sap -> its -> webgui. 
 - If it’s not active, right-click and select "Activate Service." 
+
+
+</br></br>
+
+### Step 2: Test the SAP GUI for HTML </br>
+Before proceeding with the conversion, it's essential to verify that the SAP GUI for HTML is functioning.
+</br>
+Use the following URL format to access the SAP GUI for HTML from a browser:
+</br>
+
+```
+
+http://<your_sap_system>:<port>/sap/bc/gui/sap/its/webgui
+
+```
