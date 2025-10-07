@@ -1,4 +1,4 @@
-### how to create Web service in first place in SAP 
+### How to create Web service in first place in SAP 
 
 - Create a package 
 - Create a Function group 
