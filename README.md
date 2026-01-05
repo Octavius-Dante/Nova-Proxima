@@ -19,7 +19,7 @@ https://community.sap.com/t5/application-development-blog-posts/salv-alv-quickst
 </br></br>
 
 <p align="center"> 
-<a href="https://github.com/Octavius-Dante/SAP_INDEX> Go To SAP INDEX</a>
+<a href="https://github.com/Octavius-Dante/SAP_INDEX> Go To SAP INDEX </a>
 </p>
 
 ##
